@@ -1,0 +1,1654 @@
+<tw-storydata name="Zeta Wave" startnode="2" creator="Twine" creator-version="2.2.1" ifid="C3BAFC6F-DD25-4D1C-9866-346F8F5AF332" zoom="1" format="SugarCube" format-version="2.29.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700|Open+Sans|Neucha|Indie+Flower|Handlee');
+
+html.girl body {
+	background-color: #ffdddd;
+	color: #cc4444;
+	font-family: "Neucha",serif;
+	font-size: 130%;
+	margin: 4em 15% 5% 5em;
+}
+html.neutral body {
+	background-color: #dddddd;
+	color: #cc44cc;
+	font-family: "Handlee",serif;
+	font-size: 130%;
+	margin: 4em 15% 5% 5em;
+}
+html.boy body {
+	background-color: #ddddff;
+	color: #4444cc;
+	font-family: "Neucha",serif;
+	font-size: 130%;
+	margin: 4em 15% 5% 5em;
+}
+
+
+#sidebar {
+	left: 7.5em;
+	margin: 0;
+	padding: 0 1em 0 0;
+	font: bold 1.5em "PT Serif",serif;
+}
+#sidebar ul {
+	padding: 0;
+}
+#sidebar li {
+	color: #333;
+	text-align: right;
+	background-repeat: no-repeat;
+	margin-bottom: 1em;
+	line-height: 1.4em;
+	list-style: none;
+}
+#sidebar li a {
+	color: #333;
+	text-decoration: none;
+}
+#sidebar li a:hover, #sidebar #title a:hover, #snapback:hover, #restart:hover {
+	color: #fff;
+	cursor: pointer;
+	text-decoration: none;
+}
+#sidebar #title {
+	font-size: 150%;
+}
+#sidebar #title, #sidebar #title:hover, #sidebar #title a {
+	color: #999;
+}
+#sidebar #storySubtitle {
+	font-size: 75%;
+}
+#storyAuthor {
+	font-size: 50%;
+}
+#sidebar #storyMenu {
+	line-height: 2.5em;
+	margin-bottom: .5em;
+	color: #999;
+	cursor: auto;
+}
+#story-caption {
+	line-height: 2.5em;
+	margin-bottom: .5em;
+	color: #999;
+	cursor: auto;
+}
+#sidebar #credits {
+	padding-top: 2em;
+	font-weight: normal;
+	font-size: 80%;
+}
+#sidebar #credits:hover {
+	color: #333;
+}
+#sidebar #credits a {
+	text-decoration: none;
+}
+#passages {
+	padding-left: 1.5em;
+}
+.menu {
+	background-color: #343434;
+	color: #fff;
+	opacity: .9;
+	border: 1px solid #fff;
+	text-align: left;
+	font: 1.5em "PT Serif",serif;
+	line-height: 2em;
+}
+.menu div {
+	padding: 0 .4em;
+}
+.menu div:hover {
+	cursor: pointer;
+	background-color: #fff;
+	color: #343434;
+}
+html.boy input[type="text"]:enabled {
+  	min-width: 10em;
+  	max-width: 20em;
+	background-color: #ddddff;
+	color: #4444cc;
+}
+html.boy input[type="text"]:hover {
+  	min-width: 10em;
+  	max-width: 20em;
+	background-color: #ddddff;
+	color: #4444cc;
+    border-color: red;
+}
+html.boy input[type="text"]:focus {
+  	min-width: 10em;
+  	max-width: 20em;
+	background-color: #aaccdd;
+	color: #3333aa;
+    border-color: red;
+}
+html.girl input[type="text"]:enabled {
+  	min-width: 10em;
+  	max-width: 20em;
+	background-color: #ffdddd;
+	color: #cc4444;
+}
+html.girl input[type="text"]:hover {
+  	min-width: 10em;
+  	max-width: 20em;
+	background-color: #ffdddd;
+	color: #cc4444;
+    border-color: blue;
+}
+html.girl input[type="text"]:focus {
+  	min-width: 10em;
+  	max-width: 20em;
+	background-color: #ddccaa;
+	color: #aa3333;
+    border-color: blue;
+}
+input[type="text"]:enabled {
+  	min-width: 10em;
+  	max-width: 20em;
+	background-color: #dddddd;
+	color: #cc44cc;
+}
+input[type="text"]:hover {
+  	min-width: 10em;
+  	max-width: 20em;
+	background-color: #dddddd;
+	color: #cc44cc;
+    border-color: green;
+}
+input[type="text"]:focus {
+  	min-width: 10em;
+  	max-width: 20em;
+	background-color: #dddddd;
+	color: #cc44cc;
+    border-color: green;
+}
+.passage {
+	font-size: 1.2em;
+	line-height: 175%;
+	margin-bottom: 2em;
+	text-align: left;
+}
+.indent {
+  text-indent: 2em;
+}
+html.girl .passage a {
+  	color: #cc6699;
+	font-weight: bold;
+	text-decoration: underline;
+}
+html.girl .passage a:hover {
+	color: #aa4477;
+	text-decoration: underline;
+}
+html.boy .passage a {
+  	color: #6699cc;
+	font-weight: bold;
+	text-decoration: underline;
+}
+html.boy .passage a:hover {
+	color: #4477aa;
+	text-decoration: underline;
+}
+html.neutral .passage a {
+  	color: #cc66cc;
+	font-weight: bold;
+	text-decoration: underline;
+}
+html.neutral .passage a:hover {
+	color: #aa44aa;
+	text-decoration: underline;
+}
+.content > ul {
+	padding-top: 1.3em;
+}
+.passage ul, .passage ol {
+	margin-left: .5em;
+	padding-left: 1.5em;
+}
+.passage li {
+	margin-right: 6em;
+}
+.passage table {
+	border-collapse: collapse;
+	font-size: 100%;
+	margin: .8em 1.0em;
+}
+.passage th,.passage td,.passage tr,.passage caption {
+	padding: 3px;
+}
+.passage hr {
+	height: 1px;
+}
+.passage center {
+	max-width:50%;
+	margin:auto;
+}
+.marked {
+	margin-right: 12px;
+	padding: 3px;
+}
+.disabled {
+	font-weight: bold;
+	color: #333;
+}
+.aside {
+  color: #440044;
+}
+.past {
+  background-color: #000022;
+  color: #4466ff;
+  font-family: "Caveat",sans-serif;
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;  
+  top: 0;
+  padding-top: 20px;
+}
+.lefttext {
+  background: #888888;
+  color: black;
+  width: 50%;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: "Open Sans",sans-serif;
+}
+.righttext {
+  background: #4488bb;
+  color: white;
+  width: 50%;
+  margin-left: 50%;
+  text-align: right;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: "Open Sans",sans-serif;
+}
+.righttext a {
+  color: #00eaff;
+}
+.centerhead {
+  width: 100%;
+  border-radius: 5px;
+  background: white;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  font-family: "Open Sans",sans-serif;
+}
+@media screen and (max-width: 640px) {
+	body {
+		margin: 5%;
+	}
+	#sidebar {
+		width:100%;
+		margin: 0;
+		border-bottom: 1px solid #333;
+	}
+	#passages {
+		padding-top: 2em;
+		border-left: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script><tw-passagedata pid="1" name="StoryInit" tags="" position="50,50" size="100,100">&lt;&lt;set $debug to 0&gt;&gt;
+
+/% copula, copulapast, will, willcap, would, wouldcap, is, iscap, 
+ispl, isplcap, have, havecap %/
+/% nom, nompl, nomcap, nomplcap, acc, poss, posspl, posscap, possplcap, possadj, reflana %/
+&lt;&lt;set $sex to &quot;neutral&quot;&gt;&gt;
+
+&lt;&lt;set $copula to [&quot;is&quot;, &quot;am&quot;, &quot;are&quot;, &quot;is&quot;, &quot;is&quot;]&gt;&gt;
+&lt;&lt;set $copulapast to [&quot;was&quot;, &quot;was&quot;, &quot;were&quot;, &quot;was&quot;, &quot;was&quot;]&gt;&gt;
+&lt;&lt;set $nom to [&quot;ze&quot;, &quot;I&quot;, &quot;you&quot;, &quot;he&quot;, &quot;she&quot;]&gt;&gt;
+&lt;&lt;set $nompl to [&quot;they&quot;, &quot;we&quot;, &quot;you&quot;, &quot;they&quot;, &quot;they&quot;]&gt;&gt;
+&lt;&lt;set $nomcap to [&quot;Ze&quot;, &quot;I&quot;, &quot;You&quot;, &quot;He&quot;, &quot;She&quot;]&gt;&gt;
+&lt;&lt;set $nomplcap to [&quot;We&quot;, &quot;We&quot;, &quot;You&quot;, &quot;They&quot;, &quot;They&quot;]&gt;&gt;
+&lt;&lt;set $acc to [&quot;hir&quot;, &quot;me&quot;, &quot;you&quot;, &quot;him&quot;, &quot;her&quot;]&gt;&gt;
+&lt;&lt;set $poss to [&quot;hir&quot;, &quot;my&quot;, &quot;your&quot;, &quot;his&quot;, &quot;her&quot;]&gt;&gt;
+&lt;&lt;set $posspl to [&quot;their&quot;, &quot;our&quot;, &quot;your&quot;, &quot;their&quot;, &quot;their&quot;]&gt;&gt;
+&lt;&lt;set $posscap to [&quot;Hir&quot;, &quot;My&quot;, &quot;Your&quot;, &quot;His&quot;, &quot;Her&quot;]&gt;&gt;
+&lt;&lt;set $possplcap to [&quot;Their&quot;, &quot;Our&quot;, &quot;Your&quot;, &quot;Their&quot;, &quot;Their&quot;]&gt;&gt;
+&lt;&lt;set $possadj to [&quot;hirs&quot;, &quot;mine&quot;, &quot;yours&quot;, &quot;his&quot;, &quot;hers&quot;]&gt;&gt;
+&lt;&lt;set $reflana to [&quot;hirself&quot;, &quot;myself&quot;, &quot;yourself&quot;, &quot;himself&quot;, &quot;herself&quot;]&gt;&gt;
+&lt;&lt;set $reflplana to [&quot;themselves&quot;, &quot;ourselves&quot;, &quot;yourselves&quot;, &quot;themselves&quot;, &quot;themselves&quot;]&gt;&gt;
+&lt;&lt;set $adult to [&quot;person&quot;, &quot;person&quot;, &quot;person&quot;, &quot;man&quot;, &quot;woman&quot;]&gt;&gt;
+&lt;&lt;set $child to [&quot;child&quot;, &quot;kid&quot;, &quot;kid&quot;, &quot;boy&quot;, &quot;girl&quot;]&gt;&gt;
+&lt;&lt;set $will to [&quot;ze&#39;ll&quot;, &quot;I&#39;ll&quot;, &quot;you&#39;ll&quot;, &quot;he&#39;ll&quot;, &quot;she&#39;ll&quot;]&gt;&gt;
+&lt;&lt;set $willcap to [&quot;Ze&#39;ll&quot;, &quot;I&#39;ll&quot;, &quot;You&#39;ll&quot;, &quot;He&#39;ll&quot;, &quot;She&#39;ll&quot;]&gt;&gt;
+&lt;&lt;set $would to [&quot;ze&#39;d&quot;, &quot;I&#39;d&quot;, &quot;you&#39;d&quot;, &quot;he&#39;d&quot;, &quot;she&#39;d&quot;]&gt;&gt;
+&lt;&lt;set $wouldcap to [&quot;Ze&#39;d&quot;, &quot;I&#39;d&quot;, &quot;You&#39;d&quot;, &quot;He&#39;d&quot;, &quot;She&#39;d&quot;]&gt;&gt;
+&lt;&lt;set $is to [&quot;ze&#39;s&quot;, &quot;I&#39;m&quot;, &quot;you&#39;re&quot;, &quot;he&#39;s&quot;, &quot;she&#39;s&quot;]&gt;&gt;
+&lt;&lt;set $iscap to [&quot;Ze&#39;s&quot;, &quot;I&#39;m&quot;, &quot;You&#39;re&quot;, &quot;He&#39;s&quot;, &quot;She&#39;s&quot;]&gt;&gt;
+&lt;&lt;set $ispl to [&quot;they&#39;re&quot;, &quot;we&#39;re&quot;, &quot;you&#39;re&quot;, &quot;they&#39;re&quot;, &quot;they&#39;re&quot;]&gt;&gt;
+&lt;&lt;set $isplcap to [&quot;They&#39;re&quot;, &quot;We&#39;re&quot;, &quot;You&#39;re&quot;, &quot;They&#39;re&quot;, &quot;They&#39;re&quot;]&gt;&gt;
+&lt;&lt;set $have to [&quot;ze&#39;s&quot;, &quot;I&#39;ve&quot;, &quot;you&#39;ve&quot;, &quot;he&#39;s&quot;, &quot;she&#39;s&quot;]&gt;&gt;
+&lt;&lt;set $havecap to [&quot;Ze&#39;s&quot;, &quot;I&#39;ve&quot;, &quot;You&#39;ve&quot;, &quot;He&#39;s&quot;, &quot;She&#39;s&quot;]&gt;&gt;
+&lt;&lt;set $s to [&quot;s&quot;, &quot;&quot;, &quot;&quot;, &quot;s&quot;, &quot;s&quot;]&gt;&gt;
+&lt;&lt;set $es to [&quot;es&quot;, &quot;&quot;, &quot;&quot;, &quot;es&quot;, &quot;es&quot;]&gt;&gt;
+&lt;&lt;set $ies to [&quot;ies&quot;, &quot;y&quot;, &quot;y&quot;, &quot;ies&quot;, &quot;ies&quot;]&gt;&gt;
+&lt;&lt;set $gender to [&quot;0PGEN&quot;, &quot;1PGEN&quot;, &quot;2PGEN&quot;, &quot;male&quot;, &quot;female&quot;]&gt;&gt;
+&lt;&lt;set $girlboy to [&quot;0PGB&quot;, &quot;1PGB&quot;, &quot;2PGB&quot;, &quot;boy&quot;, &quot;girl&quot;]&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="MASTER" tags="" position="875,50" size="100,100">&lt;&lt;display &quot;SetBack&quot;&gt;&gt;&lt;div class=&quot;aside&quot;&gt;[Choose your story based on the starting year.]&lt;/div&gt;
+—&lt;&lt;link &quot;First Wave (1932-1951)&quot; &quot;1948&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+</tw-passagedata><tw-passagedata pid="3" name="Planning" tags="" position="200,50" size="100,100">There needs to be a master CYCLE passage that works for ALL stories.
+	* CYCLE will track what day it is, what part of the day,
+	  and which passages are to control events of that day.
+	* Each story will have a list of passage names (such as &quot;1941-Day&quot;
+	  or &quot;1965-Afterschool&quot;), so CYCLE can direct the game to refer
+	  to whatever passages are required. Since not all stories will be
+	  set in the same environment -- at work, at school -- each story can
+	  thus have its own list of required passages. Stories can also share
+	  passages for generic activities (eg, bathing, sleeping) or for
+	  certain activities that must share mechanical effects on stats
+	  (like working out). The &quot;Working Out&quot; passage from multiple eras
+	  can refer to a single Working Out Calculation passage to keep the
+	  code in one place.
+	* This structure means CYCLE must have a single array that tracks
+	  the list of passages, how long that list is, and where we are now.
+	  However, it also means that we could (in theory) skip to a new
+	  day-part by manually cycling that variable.
+	  
+There needs to be a SETUP passage for each era.
+	* The SETUP passage will establish the list of passages that must
+	  be consulted by CYCLE, as well as the starting date and any other
+	  relevant details.
+
+There must be a MASTER passage that controls access to the various eras.
+	* The MASTER passage will check to see which passages are available
+	  and establish links for the ones which are.
+	* The MASTER passage may also link to the BOOK, which puts the
+	  player&#39;s story into a medical context.
+	  
+There must be a BOOK which reflects the player&#39;s accumulated decisions and how they affect the future of the Zeta Wave phenomenon. The player can only refer to a BOOK passage after having completed the related scenario.
+	* To keep track of the BOOK, I must have a shorthand for outcomes
+	  that can be boiled down to a this-or-that variable. For instance,
+	  75% of all the players&#39; playthroughs were MTF and ended up in
+	  pregnancy, or 95% of all playthroughs changed sexual orientation,
+	  or whatever.
+	* The BOOK will not have any special interactivity to it, except to
+	  be able to reset all the variables (with a warning that this will
+	  start the game over from the beginning).
+
+</tw-passagedata><tw-passagedata pid="4" name="CYCLE" tags="" position="875,350" size="100,100">&lt;&lt;display &quot;SetBack&quot;&gt;&gt;&lt;&lt;if $cyc == 0 and $day gt 1&gt;&gt;&lt;&lt;display &quot;CycleCalc&quot;&gt;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;display $cycle[$cyc]&gt;&gt;
+&lt;&lt;if $mup gt 0 and $fup gt 0&gt;&gt;&lt;div class=&quot;aside&quot;&gt;[Your masculinity will go up by $mup point&lt;&lt;if $mup gt 1&gt;&gt;s&lt;&lt;endif&gt;&gt; and your femininity will go up by $fup point&lt;&lt;if $fup gt 1&gt;&gt;s&lt;&lt;endif&gt;&gt;.]&lt;/div&gt;&lt;&lt;set $minc += $mup&gt;&gt;&lt;&lt;set $mup to 0&gt;&gt;&lt;&lt;set $finc += $fup&gt;&gt;&lt;&lt;set $fup to 0&gt;&gt;&lt;&lt;elseif $mup gt 0&gt;&gt;&lt;div class=&quot;aside&quot;&gt;[Your masculinity will go up by $mup point&lt;&lt;if $mup gt 1&gt;&gt;s&lt;&lt;endif&gt;&gt;.]&lt;/div&gt;&lt;&lt;set $minc += $mup&gt;&gt;&lt;&lt;set $mup to 0&gt;&gt;&lt;&lt;elseif $fup gt 0&gt;&gt;&lt;div class=&quot;aside&quot;&gt;[Your femininity will go up by $fup point&lt;&lt;if $fup gt 1&gt;&gt;s&lt;&lt;endif&gt;&gt;.]&lt;/div&gt;&lt;&lt;set $finc += $fup&gt;&gt;&lt;&lt;set $fup to 0&gt;&gt;&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="1948" tags="" position="200,650" size="100,100">&lt;&lt;silently&gt;&gt;
+
+	UNIQUE: THESE VARIABLES CHANGE ON A PER-STORY BASIS
+	
+	&lt;&lt;set $cycle to [&quot;Wake&quot;, &quot;1948 Dress&quot;, &quot;1948 School 1&quot;, &quot;1948 Lunch&quot;, &quot;1948 School 2&quot;, &quot;1948 After School&quot;, &quot;1948 Dinner&quot;, &quot;1948 Bedtime&quot;, &quot;Sleep&quot;, &quot;Dreams&quot;]&gt;&gt;
+	&lt;&lt;set $startyear to 1948&gt;&gt;
+	&lt;&lt;set $mchoice to &quot;Billy&quot;&gt;&gt;&lt;&lt;set $mchoice2 to &quot;William&quot;&gt;&gt;
+	&lt;&lt;set $fchoice to &quot;Betty&quot;&gt;&gt;&lt;&lt;set $fchoice2 to &quot;Elizabeth&quot;&gt;&gt;
+	&lt;&lt;set $lastname to &quot;Kendall&quot;&gt;&gt;
+	&lt;&lt;set $daynames to [&quot;Tuesday&quot;, &quot;Wednesday&quot;, &quot;Thursday&quot;, &quot;Friday&quot;, &quot;Saturday&quot;, &quot;Sunday&quot;, &quot;Monday&quot;]&gt;&gt;
+	&lt;&lt;set $now = new Date(1948, 8, 7)&gt;&gt; /% 0 = January, 8 = September %/
+	&lt;&lt;set $menses = new Date(1948, 8, 20)&gt;&gt;
+	&lt;&lt;set $cyc to 5&gt;&gt; /% Starting cyc = After School %/
+
+	Instructors:
+		&lt;&lt;set $bkp to &quot;Mr Vanderbilt&quot;&gt;&gt;
+		&lt;&lt;set $eng to &quot;Mrs Hull&quot;&gt;&gt;
+		&lt;&lt;set $geom to &quot;Mr Franklin&quot;&gt;&gt;
+		&lt;&lt;set $mgym to &quot;Mr Franklin&quot;&gt;&gt;
+		&lt;&lt;set $fgym to &quot;Mrs Bell&quot;&gt;&gt;
+		&lt;&lt;set $hist to &quot;Mr Lester&quot;&gt;&gt;
+		&lt;&lt;set $homeec to &quot;Mrs Reynolds&quot;&gt;&gt;
+		&lt;&lt;set $span to &quot;Mrs White&quot;&gt;&gt;
+		&lt;&lt;set $steno to &quot;Mrs Johnson&quot;&gt;&gt;
+		&lt;&lt;set $music to &quot;Mrs Guildford&quot;&gt;&gt;
+		&lt;&lt;set $shop to &quot;Mr Thacker&quot;&gt;&gt;
+
+
+	UNIVERSAL: ALWAYS SET THESE VARIABLES THE SAME FOR EVERY STORY
+
+	&lt;&lt;set $masc to 0&gt;&gt;
+	&lt;&lt;set $fem to 0&gt;&gt;
+	&lt;&lt;set $len to $cycle.length&gt;&gt;
+	&lt;&lt;set $day to 1&gt;&gt;
+	&lt;&lt;set $weekday to 0&gt;&gt;
+	
+	&lt;&lt;set $path to []&gt;&gt;
+	
+	&lt;&lt;set $secretive to 0&gt;&gt;
+	&lt;&lt;set $forthright to 0&gt;&gt;
+	&lt;&lt;set $ashamed to 0&gt;&gt;
+
+	HOW MUCH TOTAL TO INCREASE EACH DAY
+	&lt;&lt;set $minc to 0&gt;&gt;
+	&lt;&lt;set $finc to 0&gt;&gt;
+	
+	HOW MUCH CHANGE TO ALERT THE PLAYER ABOUT
+	&lt;&lt;set $mup to 0&gt;&gt;
+	&lt;&lt;set $fup to 0&gt;&gt;
+
+&lt;&lt;endsilently&gt;&gt;&lt;&lt;display &quot;Select Gender&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Generic" tags="" position="200,350" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="7" name="Select Gender" tags="" position="200,200" size="100,100">&lt;div class=&quot;aside&quot;&gt;[Please choose a character.]&lt;/div&gt;
+—&lt;&lt;link $mchoice &quot;CYCLE&quot;&gt;&gt;&lt;&lt;set $gen to 3&gt;&gt;&lt;&lt;set $sex to &quot;male&quot;&gt;&gt;&lt;&lt;set $startsex to &quot;male&quot;&gt;&gt;&lt;&lt;/link&gt;&gt; (born male in $startyear)
+—&lt;&lt;link $fchoice &quot;CYCLE&quot;&gt;&gt;&lt;&lt;set $gen to 4&gt;&gt;&lt;&lt;set $sex to &quot;female&quot;&gt;&gt;&lt;&lt;set $startsex to &quot;female&quot;&gt;&gt;&lt;&lt;/link&gt;&gt; (born female in $startyear)</tw-passagedata><tw-passagedata pid="8" name="Wake" tags="" position="350,500" size="100,100">&lt;div class=&quot;aside&quot;&gt;[Today is &lt;&lt;print $now.toDateString()&gt;&gt;.]&lt;/div&gt;
+&lt;&lt;if $day == 2 and $startyear == 1948&gt;&gt;&lt;div class=&quot;indent&quot;&gt;You wake up, groggy and only half-covered by your blankets. It was a weird night, and you don&#39;t feel like you&#39;ve slept much at all. You&#39;re also ravenously hungry.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;You push your feet out of bed, searching for your slippers, and sit on the edge of the bed to collect your thoughts. What //was// that weird dream that woke you up, anyway?&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Shaking off sleep, you head toward the bathroom. You make it as far as the toilet before coming to the final, fatal realization: you&#39;re a $girlboy[$gen].&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;There&#39;s no doubt about it. &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;One peek in the pajamas is enough. Sure enough, there&#39;s no cock to be found in there.&lt;&lt;else&gt;&gt;One look at the front of your nightgown is enough. Sure enough, there&#39;s a cock down there.&lt;&lt;endif&gt;&gt;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;You check your reflection in the mirror, and are relieved to find that you don&#39;t look //that// much different. &lt;&lt;if $sex == &quot;female&quot;&gt;&gt;Your hair is still boyishly short, your face is still youthful and somewhat good-looking, and — another peek — you don&#39;t have any girly tits or anything.&lt;&lt;else&gt;&gt;Your hair is still the right medium length for a bob, your face is still youthful and pretty, and your figure is still slender. You never were all that developed anyway, not yet, so there isn&#39;t much to notice.&lt;&lt;endif&gt;&gt; But there&#39;s //something// there that&#39;s different, something subtle. Your eyelashes? Your ears? Your lips? A certain set of the shoulders? It&#39;s hard to say.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;//Okay, $name, don&#39;t flip your wig,// you tell yourself, breathing hard. //Something must have happened that—//&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;You have a flash of memory. An image from the dream returns to mind. You and $so, sitting together on your bed...&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Jeepers creepers! What&#39;s going on around here?&lt;/div&gt;
+—&lt;&lt;link &quot;tell your parents right away&quot; &quot;1948 Family Talk&quot;&gt;&gt;&lt;&lt;set $page to 6&gt;&gt;&lt;&lt;set $path.push(&quot;reveal TG&quot;)&gt;&gt;&lt;&lt;set $forthright += 2&gt;&gt;&lt;&lt;/link&gt;&gt;
+—&lt;&lt;link &quot;get ready for school and don&#39;t tell anybody&quot; &quot;CYCLE&quot;&gt;&gt;&lt;&lt;set $path.push(&quot;secret TG&quot;)&gt;&gt;&lt;&lt;set $secretive += 2&gt;&gt;&lt;&lt;set $cyc++&gt;&gt;&lt;&lt;/link&gt;&gt;
+—&lt;&lt;link &quot;skip school and don&#39;t tell anybody&quot; &quot;1948 Family Talk&quot;&gt;&gt;&lt;&lt;set $path.push(&quot;shameful TG&quot;)&gt;&gt;&lt;&lt;set $page to 7&gt;&gt;&lt;&lt;set $ashamed += 2&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $day == 3 and $startyear == 1948&gt;&gt;&lt;&lt;silently&gt;&gt;
+	This is the first day transformed where the parents know.
+	We must record what plan the parents _think_ is happening,
+	even if it&#39;s not always the plan that&#39;s happening now.
+	
+	&lt;&lt;set $mastersched to $sched&gt;&gt;
+	
+	We must also record whether the player is cross-dressing (that is,
+	every schedule except &quot;secret girl&quot; and &quot;secret boy&quot;). The default
+	value is TRUE.
+	
+	&lt;&lt;set $cross to true&gt;&gt;
+	&lt;&lt;if $sched == &quot;secret boy schedule&quot; or $sched == &quot;secret girl schedule&quot;&gt;&gt;
+		&lt;&lt;set $cross to false&gt;&gt;
+	&lt;&lt;endif&gt;&gt;
+	
+	It will also help to note if the player is open about being zeta.
+	The default is FALSE (because 2/3 game states do not reveal zeta to
+	classmates).
+	&lt;&lt;set $openzeta to false&gt;&gt;
+	&lt;&lt;if $path.includes(&quot;known zeta&quot;)&gt;&gt;
+		&lt;&lt;if $path.includes(&quot;pussyboy schedule&quot;) or $path.includes(&quot;dickgirl schedule&quot;)&gt;&gt;
+			&lt;&lt;set $openzeta to true&gt;&gt;
+		&lt;&lt;endif&gt;&gt;
+	&lt;&lt;endif&gt;&gt;
+	
+	Let us also set a variable for the player&#39;s *other* name, if this
+	was ever set, and the player&#39;s *current* name, depending on shape.
+	Name and Nick are always the *real* name and nick.
+	
+	&lt;&lt;if $sex == &quot;male&quot;&gt;&gt;
+		&lt;&lt;set $oppname to $mname&gt;&gt;
+		&lt;&lt;set $oppnick to $mnick&gt;&gt;
+		&lt;&lt;set $currname to $mname&gt;&gt;
+		&lt;&lt;set $currnick to $mnick&gt;&gt;
+	&lt;&lt;else&gt;&gt;
+		&lt;&lt;set $oppname to $fname&gt;&gt;
+		&lt;&lt;set $oppnick to $fnick&gt;&gt;
+		&lt;&lt;set $currname to $fname&gt;&gt;
+		&lt;&lt;set $currnick to $fnick&gt;&gt;
+	&lt;&lt;endif&gt;&gt;
+
+&lt;&lt;endsilently&gt;&gt;\
+&lt;div class=&quot;indent&quot;&gt;You wake up the next morning and instantly realize that you&#39;re still a $girlboy[$gen]. Nothing has changed.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;When she hears you moving around, Mom knocks gently and sticks her head in the door. &quot;Still?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Still.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Mom nods. &lt;&lt;if $cross == true&gt;&gt;&quot;I picked out an outfit for you. It&#39;s on your desk. The rest of your clothes are going to be hanging in the guest room closet. &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;Let me know if you have any trouble with any of the buttons.&lt;&lt;else&gt;&gt;Ask your father if you need any help with the tie.&lt;&lt;endif&gt;&gt; Breakfast will be ready shortly.&quot;&lt;&lt;else&gt;&gt;&quot;I&#39;ll have breakfast ready in a minute. Come downstairs when you&#39;re feeling ready.&quot;&lt;&lt;endif&gt;&gt;&lt;/div&gt;
+&lt;&lt;display &quot;CleanReturn&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="9" name="CleanReturn" tags="" position="500,200" size="100,100">&lt;&lt;if $cyc == $len-1&gt;&gt;—[[continue|CYCLE][$cyc to 0, $day++]]&lt;&lt;else&gt;&gt;—[[continue|CYCLE][$cyc++]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $debug == 1&gt;&gt;cyc: $cyc
+day: $day
+mup: $mup
+fup: $fup&lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="10" name="Dreams" tags="" position="650,500" size="100,100">&lt;&lt;if $day == 1 and $startyear == 1948&gt;&gt;&lt;div class=&quot;indent&quot;&gt;//$so is on the bed next to you, &lt;&lt;if $sex == &quot;male&quot;&gt;&gt;leaning back seductively, inviting you to come toward her. Her lush body is ripe and bursting under her cashmere sweater, and you can&#39;t wait to touch it.&lt;&lt;else&gt;&gt;leaning in seductively, pressing you back toward the inviting pillows. His handsome face is coming straight toward yours, and you can&#39;t wait to feel his lips on yours.&lt;&lt;endif&gt;&gt; The moment is right.//&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;//But there&#39;s something wrong. &lt;&lt;if $sex == &quot;male&quot;&gt;&gt;You feel your trousers are bunched up awkwardly around your cock, and you want to adjust yourself. There&#39;s no delicate way to do it. $so is watching hungrily. You reach down, trying to tug your trousers and clear that clamped, pinching sensation, but it won&#39;t go away. You keep reaching down there, again and again, but you can&#39;t figure out where your penis is. It&#39;s not there. Your trousers are caught on something, but there&#39;s nothing down there to catch upon.&lt;&lt;else&gt;&gt;You feel something under your skirt is bunched up awkwardly, and you want to smooth it out. There&#39;s no delicate way to do it. $so is watching you hungrily. You reach down, trying to tug your skirt smooth in your lap, but there&#39;s still an awkward bulge there. You keep trying to smooth the lump away, but it just doesn&#39;t disappear.&lt;&lt;endif&gt;&gt; You&#39;re stuck.//&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;//&quot;What&#39;s the matter?&quot; $so asks, and you open your mouth and say &lt;&lt;if $path.includes(&quot;admit dating&quot;)&gt;&gt;&quot;Nothing&#39;s the matter. Why does it have to be a secret?&quot;&lt;&lt;else&gt;&gt;&quot;You have to promise not to tell anybody,&quot;&lt;&lt;endif&gt;&gt; and $so just stares at you.//&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Then you wake up, and the dream flits away into the night, half-forgotten. The blankets are tangled and twisted, and tucked between your legs.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Vaguely, you recall something about being //stuck// in your dream. Trying to ... something. It was probably the blankets, all tangled up. You remember $so, too, and you remember being there on the bed, but everything else is a confusing blank. Whatever it was you were dreaming out, it was very intense. You feel like you&#39;re on fire, shaking all over. Thirsty.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;You reach in the dark for your bedside glass of water and take a sip. Maybe the dream will be there when you fall asleep again. It seemed nice.&lt;/div&gt;
+&lt;&lt;display &quot;SexSwitch&quot;&gt;&gt;&lt;&lt;display &quot;CleanReturn&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $day == 2 and $startyear == 1948&gt;&gt;&lt;div class=&quot;indent&quot;&gt;Some time before dawn, you wake up from a strange dream. You were sitting at school in a great big classroom, but you couldn&#39;t figure out which seat was yours.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;You go back to sleep, groggy, hoping the dream doesn&#39;t recur. But it does.&lt;/div&gt;
+&lt;&lt;display &quot;CleanReturn&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $debug == 1&gt;&gt;cyc: $cyc
+day: $day&lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="11" name="1948 Dress" tags="" position="350,800" size="100,100">&lt;&lt;if $day == 2&gt;&gt;&lt;&lt;if $path.includes(&quot;reveal TG&quot;)&gt;&gt;&lt;div class=&quot;indent&quot;&gt;You don&#39;t really have a choice, at least for today: you&#39;ll have to keep wearing your old clothes. Nobody at the school knows about this yet, and you&#39;re scratching your head about how to explain it. For the moment, you&#39;ll just have to find something to wear.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;You &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;pick out a shirt to go with your favorite sweater, and you&#39;re happy to see that the two layers together are able to conceal any changes in your chest. You don&#39;t have any girly breasts or anything, but your shoulders seem a little narrow and your arms a little too thin. A sweater covers that right up. You also manage to locate a pair of trousers that looks peachy on you, except for the noticeable absence of anything filling out the space between your legs.&lt;&lt;else&gt;&gt;pick out a favorite dress with lots of ruffles and a built-in bow, hoping that it will conceal the brand-new bulge between your thighs. It doesn&#39;t quite work, but two pairs of underwear and a tight girdle do the trick, even though it feels like your cock is uncomfortably smashed up down there. A sweater around your neck hides the width of your shoulders. A slightly bigger issue is the obvious emptiness of your bra cups.&lt;&lt;endif&gt;&gt; That could be a problem.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Luckily, you&#39;re able to &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;find an older pair of saddle shoes in the back of your closet, one size smaller, that fit your little feet.&lt;&lt;else&gt;&gt;find a pair of Mary Janes that fit your feet well enough. They were a bit big when your mother bought them, and you never quite grew into them — until now, anyway.&lt;&lt;endif&gt;&gt; Your hair is the same length that it ever was, so no difficulty there. &lt;&lt;if $startsex == &quot;female&quot;&gt;&gt;A little makeup, not too much, and you look almost the same as before.&lt;&lt;else&gt;&gt;You don&#39;t even have to shave, and you still look about the same as before.&lt;&lt;endif&gt;&gt;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Eventually, Mom comes to your room to give you her grudging seal of approval. &quot;It&#39;ll have to do,&quot; she says critically. &quot;We&#39;ll see what Dr Bennett says. If this doesn&#39;t wear off, we might have to shop for some new clothes. Heaven knows how we&#39;re going to tell your //school// what happened to you, but let your father and I worry about that for now. All right, come downstairs when you&#39;re ready. I have Malt-O-Meal on the stove for you — it&#39;s almost done — and then I&#39;ve got to drop you off at school.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Mom disappears in a swirl of skirts, leaving you to sort out your problem.&lt;/div&gt;
+&lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;—&lt;&lt;link &quot;stuff a sock into your trousers&quot; &quot;1948 Dress Choices&quot;&gt;&gt;&lt;&lt;set $path.push(&quot;sock stuffing&quot;)&gt;&gt;&lt;&lt;set $page to 0&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;—&lt;&lt;link &quot;stuff toilet paper into your bra&quot; &quot;1948 Dress Choices&quot;&gt;&gt;&lt;&lt;set $path.push(&quot;bra stuffing&quot;)&gt;&gt;&lt;&lt;set $page to 1&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;endif&gt;&gt;
+—&lt;&lt;link &quot;go to school as you are&quot; &quot;CYCLE&quot;&gt;&gt;&lt;&lt;set $path.push(&quot;no stuffing&quot;)&gt;&gt;&lt;&lt;set $cyc++&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;elseif $path.includes(&quot;secret TG&quot;)&gt;&gt;&lt;div class=&quot;indent&quot;&gt;You don&#39;t really have a choice, at least for today: you&#39;ll have to keep wearing your old clothes. Nobody at the school knows about this yet, and you&#39;re scratching your head about how to explain it. For the moment, you&#39;ll just have to find something to wear.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;You &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;pick out a shirt to go with your favorite sweater, and you&#39;re happy to see that the two layers together are able to conceal any changes in your chest. You don&#39;t have any girly breasts or anything, but your shoulders seem a little narrow and your arms a little too thin. A sweater covers that right up. You also manage to locate a pair of trousers that looks peachy on you, except for the noticeable absence of anything filling out the space between your legs.&lt;&lt;else&gt;&gt;pick out a favorite dress with lots of ruffles and a built-in bow, hoping that it will conceal the brand-new bulge between your thighs. It doesn&#39;t quite work, but two pairs of underwear and a tight girdle do the trick, even though it feels like your cock is uncomfortably smashed up down there. A sweater around your neck hides the width of your shoulders. A slightly bigger issue is the obvious emptiness of your bra cups.&lt;&lt;endif&gt;&gt; That could be a problem.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Luckily, you&#39;re able to &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;find an older pair of saddle shoes in the back of your closet, one size smaller, that fit your little feet.&lt;&lt;else&gt;&gt;find a pair of Mary Janes that fit your feet well enough. They were a bit big when your mother bought them, and you never quite grew into them — until now, anyway.&lt;&lt;endif&gt;&gt; Your hair is the same length that it ever was, so no difficulty there. &lt;&lt;if $startsex == &quot;female&quot;&gt;&gt;A little makeup, not too much, and you look almost the same as before.&lt;&lt;else&gt;&gt;You don&#39;t even have to shave, and you still look about the same as before.&lt;&lt;endif&gt;&gt;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Eventually, Mom comes to your room to announce breakfast. &quot;Are you ready for school? Come downstairs as soon as you are. I have Malt-O-Meal on the stove for you — it&#39;s almost done — and then I&#39;ve got to drop you off at school.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Mom disappears in a swirl of skirts, having noticed nothing unusual about you — or if she noticed anything, she didn&#39;t mention it. That still leaves you to sort out your problem.&lt;/div&gt;
+&lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;—&lt;&lt;link &quot;stuff a sock into your trousers&quot; &quot;1948 Dress Choices&quot;&gt;&gt;&lt;&lt;set $path.push(&quot;sock stuffing&quot;)&gt;&gt;&lt;&lt;set $page to 0&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;—&lt;&lt;link &quot;stuff toilet paper into your bra&quot; &quot;1948 Dress Choices&quot;&gt;&gt;&lt;&lt;set $path.push(&quot;bra stuffing&quot;)&gt;&gt;&lt;&lt;set $page to 1&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;endif&gt;&gt;
+—&lt;&lt;link &quot;go to school as you are&quot; &quot;CYCLE&quot;&gt;&gt;&lt;&lt;set $path.push(&quot;no stuffing&quot;)&gt;&gt;&lt;&lt;set $cyc++&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;elseif $path.includes(&quot;shameful TG&quot;)&gt;&gt;&lt;div class=&quot;indent&quot;&gt;The trouble with staying home from school, supposedly too ill to go, is that Mom will probably be here all day. You always hear her complaining about how much there is to do around the house: picking up after Pop and two kids, vacuuming, dusting, going shopping, baking, getting ready for dinner, and so on. She //might// be too busy to sneak upstairs and peek into your bedroom, but then again, she might not. That means you&#39;re going to have to look the part, just in case.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;As long as you stay in bed, you should be fine, but you know you can&#39;t hide here all day. You have to go downstairs, and soon, to ask $fr to collect your homework from your teachers. The minute you get up and go downstairs, Mom is going to notice something is wrong about you. &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;That gap between your thighs is going to be a problem. Your pajama bottoms don&#39;t do anything to conceal the fact that you&#39;re missing something important.&lt;&lt;else&gt;&gt;That bulge between your thighs is going to be a problem. Your nightgown doesn&#39;t do anything to conceal the fact that you&#39;re packing some new equipment down there, or that you&#39;re missing a few things up top.&lt;&lt;endif&gt;&gt; You&#39;re going to need to do something about that.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;Luckily, you don&#39;t have any girly breasts or anything yet, so all you need is a strategic pair of socks.&lt;&lt;else&gt;&gt;Luckily, all it takes is a little toilet tissue to fill out your bra, and a couple pairs of underwear and a girdle to hide the telltale lump.&lt;&lt;endif&gt;&gt;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;You creep downstairs, holding your abdomen for theatrical effect, and go into the kitchen to use the telephone. After asking the operator ELliot-6251, you listen carefully for any telltale signs of breathing while $fr&#39;s number rings on the other end.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;At that moment, Mom walks into the kitchen and starts stirring up some Malt-O-Meal for $sibnick&#39;s breakfast. She ignores you, standing in your socks by the telephone, but it still makes you nervous.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Hello?&quot; It&#39;s $fr&#39;s mother.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Hello, Mrs Lenford,&quot; you say. &quot;Can I speak with $fr, please?&quot; You don&#39;t really want to dawdle in the kitchen under your mom&#39;s scrutiny, but you learned good telephone manners through scouting and you can&#39;t just stop now.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;In a minute, $fr comes on the line. &quot;Hello? $name?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Good, you haven&#39;t left for school yet,&quot; you say, and explain about the need for homework. &quot;Could you stop by my classes and pick it up, and then bring it by?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Why, what&#39;s wrong?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Mom is still stirring away at the stove, so you say, &quot;I&#39;m not feeling quite myself. A little under the weather. I&#39;ll tell you later.&quot; At a glance from your mother, you add, &quot;It&#39;s nothing important. I don&#39;t want to make you late for school.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;That seemed to do the trick. Now to go back to your room and try to figure out what&#39;s happening.&lt;/div&gt;
+--&lt;&lt;link &quot;continue&quot; &quot;1948 Skip First Day&quot;&gt;&gt;&lt;&lt;set $page to 0&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;endif&gt;&gt;&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $day == 3&gt;&gt;&lt;&lt;if $cross == true and $sex == &quot;male&quot;&gt;&gt;&lt;div class=&quot;indent&quot;&gt;The outfit your mother chose for you is a pair of dark blue slacks, a white men&#39;s shirt with red buttons, one of Pop&#39;s blue ties, and a light blue cardigan.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;It all fits pretty well, considering. The white underwear is much more comfortable for your cock than those tight panties you usually wear. The buttons are backward on the shirt, but you figure it all out except the tie, which you aren&#39;t sure how to wear. Fortunately, there&#39;s a section in the Girl Scout guide on knot-tying, so you look up a half-Windsor knot and figure it out yourself. It takes a couple of tries to get the length right, and you still have to tuck the end of the tie into your shirt so it doesn&#39;t stick out the bottom of the sweater.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;You check yourself out in the mirror in the upstairs hallway. You look a little rumpled and confused, but not bad. Everything looks just right, except for the long hair. It&#39;s always //something,// isn&#39;t it?&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Mom catches you in the hallway. A pair of silver scissors glints in her hand. &quot;All right,&quot; she says. &quot;Let&#39;s cut that hair.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Mom!&quot; you protest.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;You have to stick to the dress code,&quot; she says implacably. &quot;Now come downstairs and we&#39;ll get that trimmed off in a jiffy.&quot;&lt;/div&gt;
+&lt;&lt;elseif $cross == true and $sex == &quot;female&quot;&gt;&gt;&lt;div class=&quot;indent&quot;&gt;The outfit your mother chose for you is a pale blue dress with frilly white lace pockets on the skirt. There&#39;s also a pair of black patent-leather shoes, a yellow cardigan, and, of course, the inevitable: a white bra and an unfamiliar pair of panties.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;You&#39;re wrestling with the bra when Mom knocks on your door again. &quot;Are you decent?&quot; she asks, sticking her head in.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Mom!&quot; you say, practically naked, wearing only panties, with your arms tangled in the bra straps. &quot;I thought you told $sib not to open doors like that.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;I&#39;m your mother,&quot; she says, unperturbed, and points to the bed. &quot;Sit. I&#39;ve got to trim your toenails.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Why? Nobody&#39;s going to see them.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;You have to keep them trimmed or you&#39;ll get a run in your stockings.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Stockings?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;You heard me. The war&#39;s over. Ladies are wearing nylon stockings again. No more bare legs. Not for you, anyway — we&#39;ll talk about getting your legs shaved properly tonight. Now hold still and give me those toes.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;After trimming your toenails, Mom shows you how to roll up a pair of white stockings and unroll them up your legs. &quot;Now you do this one,&quot; she says, handing it to you. &quot;What have you //done// to this brassiere? It&#39;s all twisted into a — oh, there we go.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;After you get the stockings on, she womanhandles the bra onto your body. &quot;You don&#39;t need one, not really,&quot; she notes, &quot;but people will notice if you&#39;re not wearing one, trust me.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;But—&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;This was your idea,&quot; she reminds you. &quot;I&#39;m just trying to see that you&#39;re dressed for school. Now: arms up.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;She drops the dress over your head, and you wriggle into the short sleeve holes. &quot;I&#39;ll get the buttons in the back,&quot; Mom says. &quot;It takes a little practice to get them right. Remember, if you have a dress like this with very short sleeves, you should always wear a sweater so you don&#39;t show off your bare shoulders. Oh, and I&#39;ll ask your father if we can pick up a tall mirror for you — you&#39;ll need one to get these buttons on your own. And a vanity, too.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;What&#39;s a vanity?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;A little table for doing makeup.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Do I have to wear makeup?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Yes, you do,&quot; she says, finishing the last button and picking up a sizeable case full of tubes and powders. She starts applying creams and powders to your face, dabbing here and patting there with a fragrant little pouf. &quot;People will notice if you&#39;re not wearing anything. You don&#39;t want anyone to recognize you, do you? I didn&#39;t think so. Now hold still while I do this.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;At last, your face is made up to your mother&#39;s satisfaction. In the mirror, it looks like nothing much at all, considering how much effort went into it. Your skin looks smooth, your lips look pink, and your eyebrows a little darker. Maybe your lashes are thicker from the mascara. You reach up to touch your pink cheeks.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Don&#39;t touch,&quot; Mom admonishes you, smacking your hand. &quot;You&#39;ll get smudges. Now, I&#39;ve got a wig for you, and we&#39;re going to secure it on with bobby pins so it doesn&#39;t fall off. If you&#39;re going to stay like this, your hair will grow out, and we won&#39;t need it any more, but until then you&#39;ll have to be careful, okay?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;When she&#39;s all done with you, there&#39;s a certain Alice-in-Wonderland quality to the girl you see in the mirror: pink, pretty, and puzzled.&lt;/div&gt;
+&lt;&lt;else&gt;&gt;&lt;div class=&quot;indent&quot;&gt;You go through your closet, looking for something else to wear that is equal to the concealment you managed to pull off yesterday. &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;A blazer, some slacks, a nice shirt. A tie.&lt;&lt;if $path.includes(&quot;sock stuffing&quot;)&gt;&gt; Another pair of socks for the front of your shorts.&lt;&lt;endif&gt;&gt; You feel like a bit of an imposter.&lt;&lt;else&gt;&gt;A heavy woolen skirt, a blouse, a sweater. The dreaded girdle.&lt;&lt;if $path.includes(&quot;bra stuffing&quot;)&gt;&gt; More toilet tissue for the empty bra.&lt;&lt;endif&gt;&gt; You feel like a bit of an imposter.&lt;&lt;endif&gt;&gt;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Maybe nobody will recognize &lt;&lt;if $path.includes(&quot;shameful TG&quot;)&gt;&gt;you at school.&lt;&lt;else&gt;&gt;at school again today.&lt;&lt;endif&gt;&gt; Maybe. But that would take luck, and you haven&#39;t had much of that in the last twenty-four hours.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Mom comes in to check on you, and gives a faint nod of approval. It looks like this is as good as you&#39;re going to get.&lt;/div&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;display &quot;CleanReturn&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="12" name="1948 School 1" tags="" position="500,800" size="100,100">&lt;&lt;display &quot;1948 Schedule Chooser&quot;&gt;&gt;&lt;&lt;if $day == 2&gt;&gt;&lt;div class=&quot;indent&quot;&gt;Mom drops you off at school and gives you a goodbye kiss. &lt;&lt;if $path.includes(&quot;secret TG&quot;)&gt;&gt;She&#39;s looking a lot more peaceful and happy than you feel. For her, it&#39;s the first day of summer, when she gets the whole house to herself. For you, it&#39;s the first day of 10th grade,&lt;&lt;else&gt;&gt;She&#39;s looking a little frazzled this morning. You know how she feels. It&#39;s the first day of 10th grade,&lt;&lt;endif&gt;&gt; and you can&#39;t help but feel your body could have chosen a much better day for all this to happen.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Fortunately, nobody seems to notice anything unusual about you. You get a couple of looks, but nothing too probing. Nobody seems to notice &lt;&lt;if $startsex == &quot;male&quot; and $path.includes(&quot;sock stuffing&quot;)&gt;&gt;your strategically placed pair of socks.&lt;&lt;elseif $startsex == &quot;female&quot; and $path.includes(&quot;bra stuffing&quot;)&gt;&gt;your strategically shaped toilet tissue.&lt;&lt;else&gt;&gt;anything is missing or out of place.&lt;&lt;endif&gt;&gt; With any luck, that bodes well for the remainder of the day.&lt;/div&gt;
+--&lt;&lt;link &quot;go to English class&quot; &quot;1948 English&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $day == 3&gt;&gt;&lt;div class=&quot;indent&quot;&gt;Mom drives you to school &lt;&lt;if $path.includes(&quot;known zeta&quot;)&gt;&gt;a little early so you can check in with the principal&#39;s office.&lt;&lt;elseif $path.includes(&quot;cross&quot;)&gt;&gt;a little early so she can get you registered at the principal&#39;s office under $currname $lastname, your new name.&lt;&lt;else&gt;&gt;in silence, a look of concern on her face.&lt;&lt;endif&gt;&gt; &quot;It&#39;ll be fine,&quot; she assures you as she parks the car.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&lt;&lt;if $path.includes(&quot;Dot tattled&quot;)&gt;&gt;&quot;What if $sibnick tells somebody?&quot; you ask, worried.&lt;&lt;else&gt;&gt;&quot;What if $sibnick finds out?&quot; you ask, worried. &quot;She might tell somebody.&quot;&lt;&lt;endif&gt;&gt;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Don&#39;t worry, your father and I had a talk with $sib last night,&quot; Mom says. &quot;She won&#39;t tell anybody.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&lt;&lt;if $path.includes(&quot;Dot tattled&quot;)&gt;&gt;&quot;Anybody else, you mean.&quot;&lt;&lt;else&gt;&gt;&quot;You don&#39;t sound very sure.&quot;&lt;&lt;endif&gt;&gt;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;It&#39;ll be fine,&quot; she says again, vaguely. &quot;Have a good day at school.&quot;&lt;/div&gt;
+--&lt;&lt;link &quot;go to English class&quot; &quot;1948 English&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="13" name="1948 Lunch" tags="" position="650,800" size="100,100">&lt;&lt;if $day == 2&gt;&gt;&lt;div class=&quot;indent&quot;&gt;The school cafeteria is bustling with students, a combination of new and familiar faces, as you arrive.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;$name!&quot; a voice calls from across the cafeteria, and you see $fr waving $poss[$fgen] hand. &quot;Want to sit together?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Sure!&quot; you call back, grabbing a tray. &quot;Be right there.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;After pushing your way through the line with your tray, you and $fr manage to find a seat somewhere out of the way.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;So how was your summer?&quot; $fr asks. &quot;Did you go on that camping trip with your parents, like you said you would?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;//Camping?// You cast your mind back to summer vacation, which had seemed so vital and important at the time. &quot;Yes, I did. Look, I — I have to tell you something.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;&quot;Oh, yeah, what?&quot; $fr asks, taking a huge bite of his hot dog. &quot;Did you make Eagle Scout? Meet a girl?&quot; His eyes widen. &quot;Did you get lucky with $so?&quot;&lt;&lt;else&gt;&gt;&quot;I have a lot to tell you, too,&quot; $fr says, her eyes bright. She shakes pepper onto her salad. &quot;You go first, though. Was it something about Girl Scouts? Or, wait!&quot; Her eyes brighten. &quot;Did you kiss $so?&quot;&lt;&lt;endif&gt;&gt;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Well, uh, it&#39;s //like// that,&quot; you stammer. &quot;Look, &lt;&lt;if $path.includes(&quot;reveal TG&quot;)&gt;&gt;this is still all really confusing, and I don&#39;t know how much I&#39;m supposed to tell anyone yet,&lt;&lt;else&gt;&gt;this is really queer, okay? I haven&#39;t told anybody, not a single soul,&lt;&lt;endif&gt;&gt; and you have to //promise// that you&#39;re not going blab to anyone. Not a word, okay?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;&quot;Sure, no sweat,&quot;&lt;&lt;else&gt;&gt;&quot;My lips are sealed,&quot;&lt;&lt;endif&gt;&gt; $nom[$fgen] says. &quot;What is it?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;I kind of ... changed into a $girlboy[$gen] last night.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;$fr stares at you. &quot;You&#39;re pulling my leg.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;No,&quot; you protest. &quot;Scout&#39;s honor.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;$nomcap[$fgen] looks you up and down. &quot;Are you sure? You don&#39;t look all that different to me.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Promise,&quot; you say. &quot;You won&#39;t believe what a morning I&#39;ve had. &lt;&lt;if $path.includes(&quot;reveal TG&quot;)&gt;&gt;Mom flipped out, of course. She&#39;s talking about calling the school.&lt;&lt;else&gt;&gt;Mom doesn&#39;t know, of course. Nobody does. Not even the school.&lt;&lt;endif&gt;&gt; I have no idea what I&#39;m going to do.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Really?&quot; $fr still sounds skeptical. &quot;You turned into a—&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Shhh!&quot; you say, looking around nervously. &quot;Not here, okay? Meet me at my house after school. I&#39;ll tell Mom that we&#39;re riding bikes or something.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Okay, I&#39;ll be there,&quot; $nom[$fgen] says.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;And don&#39;t &lt;&lt;if $path.includes(&quot;reveal TG&quot;)&gt;&gt;tell anybody unless I say it&#39;s okay,&quot;&lt;&lt;else&gt;&gt;tell a single person,&quot;&lt;&lt;endif&gt;&gt; you remind $acc[$fgen].&lt;/div&gt;
+&lt;&lt;display &quot;CleanReturn&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="14" name="1948 School 2" tags="" position="800,800" size="100,100">&lt;&lt;if $day == 2&gt;&gt;&lt;&lt;display &quot;1948 Spanish&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="15" name="1948 After School" tags="" position="950,800" size="100,100">&lt;&lt;if $day == 1&gt;&gt;&lt;&lt;silently&gt;&gt;INITIAL SETUP
+
+	&lt;&lt;if $sex == &quot;male&quot;&gt;&gt;
+		&lt;&lt;set $gen to 3&gt;&gt;
+		&lt;&lt;set $sgen to 3&gt;&gt;
+
+		&lt;&lt;set $so to &quot;Judith&quot;&gt;&gt;
+		&lt;&lt;set $sonick to &quot;Judy&quot;&gt;&gt;
+		&lt;&lt;set $sogen to 4&gt;&gt;
+		
+		&lt;&lt;set $father to &quot;Pop&quot;&gt;&gt;
+	
+	&lt;&lt;elseif $sex == &quot;female&quot;&gt;&gt;
+		&lt;&lt;set $gen to 4&gt;&gt;
+		&lt;&lt;set $sgen to 4&gt;&gt;
+
+		&lt;&lt;set $so to &quot;Ronald&quot;&gt;&gt;
+		&lt;&lt;set $sonick to &quot;Ronnie&quot;&gt;&gt;
+		&lt;&lt;set $sogen to 3&gt;&gt;
+		
+		&lt;&lt;set $father to &quot;Daddy&quot;&gt;&gt;
+	
+	&lt;&lt;endif&gt;&gt;
+	
+	&lt;&lt;set $sib to &quot;Dorothy&quot;&gt;&gt;
+	&lt;&lt;set $sibnick to &quot;Dot&quot;&gt;&gt;
+	
+	&lt;&lt;set $gf to &quot;Joyce&quot;&gt;&gt;
+	&lt;&lt;set $bf to &quot;Gary&quot;&gt;&gt;
+	
+	&lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;
+		&lt;&lt;set $fr to $bf&gt;&gt;
+		&lt;&lt;set $fgen to 3&gt;&gt;
+	&lt;&lt;else&gt;&gt;
+		&lt;&lt;set $fr to $gf&gt;&gt;
+		&lt;&lt;set $fgen to 4&gt;&gt;
+	&lt;&lt;endif&gt;&gt;
+
+&lt;&lt;endsilently&gt;&gt;&lt;div class=&quot;indent&quot;&gt;It starts out innocent enough, just you and your study partner &lt;&lt;if $sex == &quot;male&quot;&gt;&gt;(and best girl)&lt;&lt;else&gt;&gt;(and best beau)&lt;&lt;endif&gt;&gt; &lt;&lt;textbox &quot;$so&quot; $so&gt;&gt; studying in your room upstairs after school. Pop always comes home around six, which means Mom is usually busy fixing dinner in the kitchen, and $sibnick is out playing with her friends. That leaves you free to do a little necking, as long as you don&#39;t get caught. It&#39;s nothing that a couple of sixteen-year-olds wouldn&#39;t be caught doing in 1948. But holy smokes, you had no idea what it was going to lead to!&lt;/div&gt;
+&lt;&lt;if $sex == &quot;male&quot;&gt;&gt;&lt;div class=&quot;indent&quot;&gt;She&#39;s looking like quite a dish in her plaid skirt with the yellow cardigan and her patent-leather shoes, and she even lets you hold her by the shoulders when you&#39;re smooching so you can feel how fuzzy and warm her sweater is. You can only imagine what her sweater might feel like on other parts of her body. But before anything gets too hot and heavy, she pushes you to the other end of the bed to catch her breath.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Jeepers, &lt;&lt;textbox &quot;$sonick&quot; $sonick&gt;&gt;,&quot; you say, calling her by her nickname. &quot;You haven&#39;t run out of gas already, have you?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;I haven&#39;t, &lt;&lt;textbox &quot;$mnick&quot; $mchoice&gt;&gt;, and you know it.&quot; She arranges her hair primly, tucking a loose strand back into her roll with a bobby pin. She likes to call you by your nickname, even though your real name is &lt;&lt;textbox &quot;$mname&quot; $mchoice2&gt;&gt;. &quot;Nobody even knows we&#39;re going steady. I don&#39;t want to get a reputation as an Able Grable. Good girls don&#39;t let boys do just //any// old thing, you know.&quot;&lt;/div&gt;
+--&lt;&lt;link &quot;promise not to tell anyone&quot; &quot;1948 SO-Female&quot;&gt;&gt;&lt;&lt;set $page to 0&gt;&gt;&lt;&lt;set $path.push(&quot;hide dating&quot;)&gt;&gt;&lt;&lt;set $secretive++&gt;&gt;&lt;&lt;set $name to $mname&gt;&gt;&lt;&lt;set $nick to $mnick&gt;&gt;&lt;&lt;/link&gt;&gt;
+--&lt;&lt;link &quot;ask why dating has to be secret&quot; &quot;1948 SO-Female&quot;&gt;&gt;&lt;&lt;set $page to 1&gt;&gt;&lt;&lt;set $path.push(&quot;admit dating&quot;)&gt;&gt;&lt;&lt;set $forthright++&gt;&gt;&lt;&lt;set $name to $mname&gt;&gt;&lt;&lt;set $nick to $mnick&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;else&gt;&gt;&lt;div class=&quot;indent&quot;&gt;He&#39;s looking like an absolute dreamboat in his dark slacks and his school sweater and those adorable penny loafers, and he smells divine as he leans in for a bit of good old-fashioned smooching. But it doesn&#39;t do to let boys get ideas, so with a pang of regret you push him to the other end of the bed to catch your breath.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Jeepers, &lt;&lt;textbox &quot;$fnick&quot; $fchoice&gt;&gt;, you haven&#39;t run out of gas already, have you?&quot; He likes to call you by your nickname, even though your real name is &lt;&lt;textbox &quot;$fname&quot; $fchoice2&gt;&gt;.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Of course not, &lt;&lt;textbox &quot;$sonick&quot; $sonick&gt;&gt;, and you know it,&quot; you say primly, calling him by his nickname. You study your reflection in the mirror and fix your hair. A strand had come loose from your roll, so you tuck it back in with a bobby pin. &quot;I just don&#39;t want you to give me a reputation as a Fast Frannie. Good girls don&#39;t let boys do just //any// old thing, you know.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Don&#39;t you want anyone to know about us?&quot; he asks.&lt;/div&gt;
+--&lt;&lt;link &quot;he&#39;s not allowed to tell anyone you&#39;re dating&quot; &quot;1948 SO-Male&quot;&gt;&gt;&lt;&lt;set $page to 0&gt;&gt;&lt;&lt;set $path.push(&quot;hide dating&quot;)&gt;&gt;&lt;&lt;set $secretive++&gt;&gt;&lt;&lt;set $name to $fname&gt;&gt;&lt;&lt;set $nick to $fnick&gt;&gt;&lt;&lt;/link&gt;&gt;
+--&lt;&lt;link &quot;dating doesn&#39;t have to be a secret&quot; &quot;1948 SO-Male&quot;&gt;&gt;&lt;&lt;set $page to 1&gt;&gt;&lt;&lt;set $path.push(&quot;admit dating&quot;)&gt;&gt;&lt;&lt;set $forthright++&gt;&gt;&lt;&lt;set $name to $fname&gt;&gt;&lt;&lt;set $nick to $fnick&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;endif&gt;&gt;&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $day == 2&gt;&gt;&lt;&lt;if $path.includes(&quot;shameful TG&quot;)&gt;&gt;&lt;div class=&quot;indent&quot;&gt;In the late afternoon, the house starts to fill up with noise again. Mom is cooking dinner, $sib has arrived from school and clattered up the stairs, and the sound of traffic in the neighborhood has increased. $fr should already be home from the first day of school. Now you just have to find a moment to tell $acc[$fgen] what&#39;s going on with you.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Fortunately, $fr calls the house just before four o&#39;clock, saying $nom[$fgen] has your homework from school.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Thanks, &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;pal,&quot;&lt;&lt;else&gt;&gt;you&#39;re a peach,&quot;&lt;&lt;endif&gt;&gt; you say over the phone. &quot;Can you come over and drop it off?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Your mother, who is listening with half an ear while she prepares a pot roast, says, &quot;Come over? Honey, you&#39;re sick.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;I&#39;m feeling a little better,&quot; you say. &quot;It&#39;s aces, mom.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;She gives you a skeptical look. &quot;All right. Now go get dressed. You can&#39;t have friends over in your &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;pajamas.&lt;&lt;else&gt;&gt;nightgown.&lt;&lt;endif&gt;&gt; And if your little friend gets sick, I&#39;m calling $poss[$fgen] parents and telling them why.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Half an hour later, $fr pedals over on $poss[$fgen] bike to hand-deliver your homework instructions.&lt;/div&gt;
+--&lt;&lt;link &quot;tell your friend what happened&quot; &quot;1948 Best Friend Chat&quot;&gt;&gt;&lt;&lt;set $page to 0&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;else&gt;&gt;&lt;div class=&quot;indent&quot;&gt;There&#39;s no homework on the first day of school, not unless you count reading Act One of that Shakespeare play. That should leave you plenty of time to meet up with $fr and explain what&#39;s going on. You&#39;ll have to walk, because Mom never picks you up from school. In the afternoons she&#39;s usually too busy cooking. You walk home as quickly as you dare.&lt;/div&gt;
+&lt;&lt;if $path.includes(&quot;reveal TG&quot;)&gt;&gt;&lt;div class=&quot;indent&quot;&gt;When you arrive home, Mom gives you a worried hug. &quot;How did everything go today, $name?&quot; she asks. &quot;Did anything ... change back to the way it was?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;No, Mom, it didn&#39;t,&quot; you admit, turning pink. &quot;It&#39;s still ... the same.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;All right,&quot; she says, withdrawing and wiping her hands unconsciously on her apron. &quot;I&#39;ve already called the school and arranged to talk to the principal later tonight. When your father gets home, we&#39;re going to call him up and explain the whole thing. I hate to interrupt Mr Fordyce with a telephone call between six and seven, but it can&#39;t be helped. After dinner, we&#39;ll try to sort out what else we can do. Oh, and you have an appointment with Dr Bennett on Monday.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Thanks, Mom,&quot; you say. &quot;By the way, is it okay if $fr comes over tonight? I ... I told $acc[$fgen] about what happened, but I said I&#39;d explain everything later after school.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;That&#39;s fine, dear,&quot; she says. &quot;And if $fr needs to use the telephone to tell $poss[$fgen] parents where $nom[$fgen] is, that&#39;s fine. As long as it&#39;s not long distance.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;$nomcap[$fgen] goes to my school, Mom,&quot; you remind her.&lt;/div&gt;
+&lt;&lt;else&gt;&gt;&lt;div class=&quot;indent&quot;&gt;When you arrive home, Mom gives you a happy hug. &quot;How was your first day, $name?&quot; she asks. &quot;Do you like all your classes?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Sure, they&#39;re fine,&quot; you say. &quot;It&#39;s, you know. It&#39;s school.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;You&#39;re usually more excited about school than that,&quot; she says, withdrawing and giving you a look of mild concern. &quot;Well, you&#39;ll probably like them better as the year goes on. You usually do. Don&#39;t forget, dinner will be at six, so be sure &lt;&lt;if $startsex == &quot;female&quot;&gt;&gt;you and $sibnick set the table by then.&quot;&lt;&lt;else&gt;&gt;you&#39;re ready to eat on time.&quot;&lt;&lt;endif&gt;&gt;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Thanks, Mom, I will.&quot; you say. &quot;Oh, is it okay if $fr comes over tonight? We haven&#39;t seen each other all summer, and we just wanted to catch up a bit.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;That&#39;s fine, dear,&quot; she says. &quot;And if $fr needs to use the telephone to tell $poss[$fgen] parents where $nom[$fgen] is, that&#39;s fine. As long as it&#39;s not long distance.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;$nomcap[$fgen] goes to my school, Mom,&quot; you remind her.&lt;/div&gt;
+&lt;&lt;endif&gt;&gt;&lt;&lt;endif&gt;&gt;\
+--&lt;&lt;link &quot;wait for your friend to come over&quot; &quot;1948 Best Friend Chat&quot;&gt;&gt;&lt;&lt;set $page to 1&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="16" name="1948 Dinner" tags="" position="1100,800" size="100,100">&lt;&lt;if $day == 1&gt;&gt;&lt;div class=&quot;indent&quot;&gt;Pop shows up at the usual time, and Mom emerges from the kitchen with dinner: meatloaf with chopped-up bits of Spam, Jell-O salad, and instant mashed potatoes. Pop hangs his hat inside the door and flops down in his easy chair to take off his shoes and read the paper for a few minutes, as is his habit.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;$name, come set the table, your father&#39;s home,&quot; Mom shouts up the stairs.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;I&#39;m right here, ma,&quot; you say. &quot;Why can&#39;t $sibnick do it? I&#39;ve got to get ready for the first day of school tomorrow.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&lt;&lt;if $sex == &quot;male&quot;&gt;&gt;&quot;Because $sibnick is still outside playing. I&#39;ll call her in while you set the table,&quot;&lt;&lt;else&gt;&gt;&quot;I don&#39;t care which one of you girls does it, and $sibnick is outside playing,&quot;&lt;&lt;endif&gt;&gt; Mom says, wiping her hands on her apron. &quot;There&#39;s plenty of time to get ready for tomorrow after you have dinner.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Grumbling, you haul four dishes out of the kitchen cabinets and set everything out: plates, forks, knives, spoons, glasses, napkins.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&lt;&lt;if $sex == &quot;male&quot;&gt;&gt;&quot;Did you wash your hands?&quot; Mom asks. She licks her fingertips and tries to smooth down your cowlick. &quot;Go comb your hair. And when $sibnick comes in, make her run a brush through those tangles, too.&quot;&lt;&lt;else&gt;&gt;&quot;Don&#39;t forget to wash your hands and fix your hair,&quot; Mom reminds you. &quot;And when $sibnick gets in, make her scrub her face. I&#39;m sure she&#39;s got dirt everywhere. Make her run a brush through those tangles, too.&quot;&lt;&lt;endif&gt;&gt;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;By the time Pop gets to the table, his tie is loosened, his shoes are off, and he&#39;s got the newspaper tucked under one arm and a highball glass with a whiskey and soda in the other hand that Mom made for him. &quot;You&#39;re looking very pretty tonight, girls,&quot; he says to &lt;&lt;if $sex == &quot;male&quot;&gt;&gt;Mom and $sib,&lt;&lt;else&gt;&gt;the three of you,&lt;&lt;endif&gt;&gt; folding the newspaper under the corner of his plate. &quot;That&#39;s good, at least.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Mother gives you and $sibnick a warning look that says //don&#39;t ask your father about the news.// It&#39;s well known that Pop didn&#39;t care for anything he read in the paper lately. If it isn&#39;t the Russians creeping around, or the French government collapsing again, it&#39;s the specter of Communists like Alger Hiss looming behind every headline. He doesn&#39;t even have the Seattle Pilots to fall back on, &lt;&lt;if $sex == &quot;male&quot;&gt;&gt;because this summer they weren&#39;t much better than //bad//, and the St Louis Browns (his second love) were even worse.&lt;&lt;else&gt;&gt;at least according to his endless grumbling over the sports section this summer.&lt;&lt;endif&gt;&gt;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Today, $sibnick must have missed Mom&#39;s Look, because she asks, &quot;Why, is something bad?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Nothing, sugar,&quot; Pop says to her, but he looks across the table at Mom, taps the newspaper, and mouths the word //polio.//&lt;/div&gt;
+--&lt;&lt;link &quot;ask about polio&quot; &quot;1948 Family Talk&quot;&gt;&gt;&lt;&lt;set $page to 0&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $day == 2&gt;&gt;&lt;&lt;if $path.includes(&quot;reveal TG&quot;)&gt;&gt;&lt;div class=&quot;indent&quot;&gt;There&#39;s already pot roast on the table when Pop gets home, and Mom rushes everyone through dinner as quickly as possible.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;No, $sibnick,&quot; she says wearily to your younger sister. &quot;Don&#39;t play with the carrots. You //like// carrots. We have an important phone call to make, and if you can&#39;t finish your supper like a good girl, you&#39;ll have to take it and finish it upstairs in your room. Cold.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Whining, instinctively realizing she&#39;s being excluded from this momentous phone call — she couldn&#39;t possibly know what it is — $sib says, &quot;C&#39;mon, Mom, can&#39;t I—&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;No, not tonight. Go on, scoot.&quot; Your mother watches $sibnick drag her feet out of the dining room, carrying the remains of her pot roast, until you finally hear her step on the stair treads and the sound of her bedroom door closing.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;All right, Earl, let&#39;s come to a decision,&quot; Mom says briskly, pushing her plate toward the center and folding her hands on the table. &quot;What are we going to do about $name?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;You&#39;ve called Dr Bennett?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Yes. $name is going in first thing on Monday.&quot;&lt;/div&gt;
+&lt;&lt;elseif $path.includes(&quot;Dot tattled&quot;)&gt;&gt;&lt;div class=&quot;indent&quot;&gt;The pot roast is a little late getting to the table, given the dramatics this afternoon, but Mom gamely rushes everyone through the meal as quickly as possible.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;All right, $sibnick,&quot; she says to your younger sister. &quot;You&#39;re going to have to take it and finish it upstairs in your room. Your father and $name and I have some things we have to talk about, and you&#39;re in enough trouble already.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Whining, instinctively realizing she&#39;s being excluded from this momentous conversation, $sib says, &quot;C&#39;mon, Mom, can&#39;t I—&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;No, you can&#39;t. You&#39;re skating on thin ice as it is.&quot; Your mother watches $sibnick drag her feet out of the dining room, carrying the remains of her pot roast, until you finally hear her step on the stair treads and the sound of her bedroom door closing.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Something happened to day, Earl,&quot; Mom says slowly, pushing the remains of her pot roast around her plate with a fork. &quot;$name seems to have come down with something.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Polio?&quot; is Pop&#39;s immediate answer, making him look up from the newspaper.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;No. Not polio.&quot; Mom clears her throat delicately. &quot;It seems that, overnight, $name has turned into a $girlboy[$gen].&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Pop stares at her, a forgotten piece of stewed carrot on his fork. &quot;You&#39;re kidding.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;I&#39;m not, Earl, I&#39;m sorry,&quot; Mom says. &quot;$sibnick found out about it earlier today when she barged into $name&#39;s room. I&#39;ve already spoken to her about it. As soon as I found out, I called Dr Bennett to make an appointment. First thing Monday morning. And I&#39;ve made arrangements to call Mr Fordyce, the principal, before seven tonight.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;During dinner?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;It can&#39;t be helped. I haven&#39;t told him anything yet, but we&#39;ve got to let him know what our decision is.&quot;&lt;/div&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;div class=&quot;indent&quot;&gt;Pop grunts, drumming his fingers on the newspaper underneath his right hand. &quot;We don&#39;t know what this condition thing is?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Dr Bennett thought he recognized it from some medical journal or other,&quot; Mom says. &quot;He says it&#39;s probably not contagious, so we don&#39;t need to worry about catching it.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Good to know,&quot; Pop says, his eyes widening a little. &quot;I hadn&#39;t thought of that. Well, what&#39;s left to decide, then?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;We have to decide what to do about school, if this doesn&#39;t wear off and $name is a $girlboy[$gen] for the rest of the year. What about clothing? What about scouts?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;I don&#39;t think we should spend a lot of money on clothes.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;I&#39;ve made a few calls to some of the other mothers in the PTA,&quot; Mom says. &quot;Families with &lt;&lt;print $girlboy[$gen] &amp; &quot;s&quot;&gt;&gt;, maybe a year or two older than $name. There&#39;s enough hand-me-downs out there, we&#39;ll be able to pick up some clothes tonight if we really need to.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;You feel yourself turn a little pale at the idea of showing up to school tomorrow earing $girlboy[$oppgen] clothes.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Look at $acc[$oppgen],&quot; Pop says, glancing at you. &quot;$nomcap[$oppgen] looks like $nom[$oppgen]&#39;s going to be sick. Before you get to far ahead of yourself, maybe you should ask $name what //$nom[$oppgen]// wants.&quot;&lt;/div&gt;
+--&lt;&lt;link &quot;tell the school what happened&quot; &quot;1948 Family Talk&quot;&gt;&gt;&lt;&lt;set $page to 10&gt;&gt;&lt;&lt;set $forthfight += 3&gt;&gt;&lt;&lt;set $path.push(&quot;known zeta&quot;)&gt;&gt;&lt;&lt;/link&gt;&gt;
+--&lt;&lt;link &quot;don&#39;t tell anyone what happened&quot; &quot;1948 Family Talk&quot;&gt;&gt;&lt;&lt;set $page to 11&gt;&gt;&lt;&lt;set $secretive += 3&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="17" name="1948 Bedtime" tags="" position="1250,800" size="100,100">&lt;&lt;if $day == 1&gt;&gt;&lt;div class=&quot;indent&quot;&gt;But after dinner, you&#39;re not thinking about preparing for the first day of school or helping to build a fence. You&#39;re thinking about the afternoon spent upstairs in your room, necking with $so, and how exciting it was. Exciting, confusing — your head is in a tailspin.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Being a teenager was pretty tough. There&#39;s all these extra responsibilities, and you&#39;re growing out of your clothing like crazy, and you keep getting these crazy urges around &lt;&lt;if $sex == &quot;male&quot;&gt;&gt;girls&lt;&lt;else&gt;&gt;boys&lt;&lt;endif&gt;&gt; that you can&#39;t really explain. Half the time you&#39;re &lt;&lt;if $sex == &quot;male&quot;&gt;&gt;doll dizzy, and you can&#39;t stop thinking about beautiful girls in your class,&lt;&lt;else&gt;&gt;khaki wacky, and you can&#39;t stop thinking about boys in your class,&lt;&lt;endif&gt;&gt; and the other half of the time you wonder if you should //be// one of them. It&#39;s all so confusing, and you&#39;ve never mentioned it to anyone.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;You try to put it out of your head as you get ready for bed: &lt;&lt;if $sex == &quot;male&quot;&gt;&gt;putting on your pajamas, brushing your teeth, combing your hair, and setting out your school clothes for the next day.&lt;&lt;else&gt;&gt;putting on your nightgown, brushing your teeth, washing your face, brushing out your hair in the mirror, and setting out your school clothes for the next day.&lt;&lt;endif&gt;&gt;&lt;/div&gt;
+&lt;&lt;display &quot;CleanReturn&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $day == 2&gt;&gt;&lt;div class=&quot;indent&quot;&gt;You get ready for bed. It //has// been quite a day, now that you think about it, and it&#39;s still not over. You have to face the chore of washing //this// face and brushing //these// teeth. You have to stare your new self in the mirror.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;You really wish you could call $so and tell $acc[$sogen] about everything that&#39;s happened, but it&#39;s too late. Your parents don&#39;t approve of the use of the telephone after eight o&#39;clock. &quot;People are trying to sleep!&quot; Pop always says.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Never mind all that for now. Tomorrow is another day.&lt;/div&gt;
+&lt;&lt;display &quot;CleanReturn&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="18" name="Sleep" tags="" position="500,500" size="100,100">&lt;&lt;if $day == 1 and $startyear == 1948&gt;&gt;&lt;div class=&quot;indent&quot;&gt;You fall into a fitful sleep, still thinking about $so.&lt;/div&gt;
+&lt;&lt;display &quot;CleanReturn&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $day == 2 and $startyear == 1948&gt;&gt;&lt;div class=&quot;indent&quot;&gt;You climb into bed, tucking your feet under the blankets. The shadows of your room seem to taunt you. This is a $girlboy[$oppgen]&#39;s room. And what are //you?//&lt;/div&gt;
+&lt;&lt;display &quot;CleanReturn&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $debug == 1&gt;&gt;cyc: $cyc
+day: $day&lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="19" name="CycleCalc" tags="" position="1025,350" size="100,100">&lt;&lt;silently&gt;&gt;
+	CYCLECALC runs every time the Day is greater than 1 and Cyc is 0.
+	This means it only runs once per day, before printing the Wake
+	routine.
+
+	INCREMENT DATE
+	&lt;&lt;set $now.setDate($now.getDate() + 1)&gt;&gt;
+
+	INCREMENT DAY OF WEEK
+	&lt;&lt;set $weekday++&gt;&gt;
+	&lt;&lt;if $weekday == 7&gt;&gt;
+		&lt;&lt;set $weekday to 0&gt;&gt;
+	&lt;&lt;endif&gt;&gt;
+	
+	RESET MENSES TO NEXT INTERVAL
+	&lt;&lt;if $now gt $menses&gt;&gt;
+		&lt;&lt;set $menses to $menses + 28&gt;&gt;
+	&lt;&lt;endif&gt;&gt;
+	
+	CALCULATE INCREASES (if any)
+	
+	IF MALE
+		The increase for being male is a flat 1 point per day.
+		
+		&lt;&lt;if $sex == &quot;male&quot;&gt;&gt;
+			&lt;&lt;set $minc++&gt;&gt;
+		&lt;&lt;endif&gt;&gt;
+
+	IF FEMALE
+		The increase for being female depends how close the player is
+		to the date of menses.
+
+		&lt;&lt;set _weekfour to $menses - 7&gt;&gt;
+		&lt;&lt;set _weekthree to $menses - 14&gt;&gt;
+		&lt;&lt;set _weekonetwo to $menses - 28&gt;&gt;
+		
+		&lt;&lt;if $now gt _weekfour&gt;&gt;
+			&lt;&lt;set $fup to $fup + 4&gt;&gt;
+		&lt;&lt;elseif $now gt _weekthree&gt;&gt;
+			&lt;&lt;set $fup to $fup + 2&gt;&gt;
+		&lt;&lt;elseif $now gt _weekonetwo&gt;&gt;
+			&lt;&lt;set $fup to $fup + 1&gt;&gt;
+		&lt;&lt;endif&gt;&gt;
+	
+&lt;&lt;endsilently&gt;&gt;</tw-passagedata><tw-passagedata pid="20" name="SetBack" tags="" position="50,200" size="100,100">&lt;&lt;silently&gt;&gt;
+	&lt;&lt;removeclass &quot;html&quot; &quot;boy&quot;&gt;&gt;
+	&lt;&lt;removeclass &quot;html&quot; &quot;girl&quot;&gt;&gt;
+	&lt;&lt;removeclass &quot;html&quot; &quot;neutral&quot;&gt;&gt;
+&lt;&lt;if $sex == &quot;female&quot;&gt;&gt;
+	&lt;&lt;addclass &quot;html&quot; &quot;girl&quot;&gt;&gt;
+&lt;&lt;elseif $sex == &quot;male&quot;&gt;&gt;
+	&lt;&lt;addclass &quot;html&quot; &quot;boy&quot;&gt;&gt;
+&lt;&lt;else&gt;&gt;
+	&lt;&lt;addclass &quot;html&quot; &quot;neutral&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;
+&lt;&lt;endsilently&gt;&gt;\</tw-passagedata><tw-passagedata pid="21" name="1948 Plan" tags="" position="350,650" size="100,100">CYCLE ORDER (per day)
+
+	WAKE: When the player wakes up. This often (not always) means we
+	run the SexChange script and assess any new changes.
+	
+	DRESS: Anything that happens before school starts. Conversations
+	with lovers, breakfast, getting dressed, traveling to school.
+	
+	SCHOOL 1: The first half of the school day.
+		M Classes: English, Health/Gym, History, Vocal Music
+		F Classes: English, Stenography, Health/Gym, Vocal Music
+		
+		Instructors:
+		Bookkeeping (Mr Vanderbilt)
+		English (Mrs Hull)
+		Geometry (Mr Franklin)
+		Health/Gym (Mr Franklin / Mrs Bell)
+		History (Mr Lester)
+		Home Economics (Mrs Reynolds)
+		Spanish (Mrs White)
+		Stenography (Mrs Johnson)
+		Vocal Music (Mrs Guildford)
+		Wood Shop (Mr Thacker)
+	
+	LUNCH: The break in the middle of the school day, talk with any
+	friends or rivals.
+	
+	SCHOOL 2: The second half of the school day.
+		M Classes: Spanish, Geometry, Wood Shop
+		F Classes: Spanish, Bookkeeping, Home Economics
+	
+	AFTER SCHOOL: Doing homework (often very little in 1948), play-
+	time, talk with friends. Mom is home during the day, so this is
+	not particularly private time, just not directly supervised.
+	
+	DINNER: Talking over family issues.
+	
+	BEDTIME: Anything after dinner and before actual sleep. This
+	can include nighttime hygiene rituals, taking baths, brushing
+	teeth, changing into pajamas, makeout sessions, or dates.
+	
+	SLEEP: A little afterthought, which can include scenes where you
+	go to bed (that is, to fall asleep) with someone else by you.
+	
+	DREAM: Anything you dream about.
+
+SCHEDULE (across multiple days)
+
+DAY 1 (Tuesday Sep 7). FIRST SHIFT (mandatory).
+
+DAY 2 (Wednesday Sep 8). WAKE UP, NOTICE (mandatory).
+	Tell parents (forthright +2)
+	You&#39;re not feeling well (ashamed +2)
+	Hide from parents (secretive +2)
+	
+	Boy schedule:
+		English: get play
+		Gym: find out about swimming
+		History: intro
+		Vocal Music: get register
+		Lunch: meet with friend
+		Spanish: encantada
+		Geometry: find out about scavenger hunt
+		Wood shop: intro
+	Girl schedule:
+		English: ibid
+		Stenography: intro
+		Gym: ibid
+		Vocal Music: ibid
+		Lunch: ibid
+		Spanish: encantado
+		Bookkeeping: intro
+		Home Ec: intro
+	After school: explain to friend. Dot catches you and blabs.
+	Dinner:
+		Reveal TG: what do you tell the school?
+			* attend openly as you are
+			* attend with opposite identity
+		Other:
+			* attend with opposite identity
+			* try to keep hiding it (for now)
+	Dream: getting caught at school.
+
+DAY 3 (Thursday Sep 9).
+	Dress:
+		* Mom borrowed clothes from your cousin (Mom&#39;s niece/nephew)
+		* Or just dress in your old clothes
+	Boy schedule:
+		English: put group together
+		Gym: pool safety rules
+		History: Columbus and important men
+		Vocal Music: tenor part
+		Lunch: it&#39;s not contagious, is it?
+		Spanish: señor/señorita
+		Geometry: Euclid
+		Wood shop: final project (jewelry box, tool tray, or birdhouse)
+	Girl schedule:
+		English: ibid
+		Stenography: proper posture
+		Gym: ibid
+		Vocal Music: alto part
+		Lunch: ibid
+		Spanish: ibid
+		Bookkeeping: accounting machines
+		Home Ec: dressmaking/measurements
+	After school: meet with friend, possibly plan date for Friday
+	Boy dream: make yourself a pretty jewelry box!
+	Girl dream: make yourself a swell suit!
+	
+
+DAY 4 (Friday September 10). GO ON A DATE (optional).
+	Boy schedule:
+		English: 
+		Gym: 
+		History: 
+		Vocal Music: 
+		Lunch: 
+		Spanish: 
+		Geometry: 
+		Wood shop: 
+	Girl schedule:
+		English: 
+		Stenography: 
+		Gym: 
+		Vocal Music: 
+		Lunch: 
+		Spanish: 
+		Bookkeeping: 
+		Home Ec: 
+
+	Optional sex with friend, to switch back.
+		Don&#39;t tell anybody! (secretive +1)
+		This will be fun! (forthright +1)
+	Optional no date (don&#39;t switch back).
+	PARENTS FIND OUT (mandatory) on arriving home; Dot blabbed.
+
+DAY 5 (Saturday September 11). SCOUTING (mandatory).
+
+DAY 6 (Sunday September 12). HELP WITH FENCE (mandatory).
+
+DAY 7 (Monday September 13). FIRST DOCTOR VISIT (mandatory).
+	Parents witnessed + shifted: parents accept it, player can
+		contribute to the solution (either HIDE or REVEAL).
+	Parents witnessed + not shifted: parents keep doc on standby,
+		ready to impose emergency identity of their own choosing.
+	Parents didn&#39;t witness + not shifted: parents keep an eye out,
+		but no changes. They don&#39;t prepare a backup identity because
+		they don&#39;t believe Dot.
+	After school: optional, meet with friend (or SO), make out.
+	Dream: optional, switch again.
+	
+DAY 8 (Tuesday September 14)
+
+DAY 9
+
+DAY 10
+
+DAY 11 (Friday September 17). EITHER DATE (OR) WET DREAM (mandatory).
+	Witnessed + Shifted: player is TG for date, swaps back.
+	Not Shifted: player is not TG for date, and swaps during.
+
+DAY 12 (Saturday September 18). SCOUTING (mandatory).
+	SCOUTS find out when Dot blabs. This jeopardizes player&#39;s place
+	in scouting organization (no boys/girls allowed).
+	Reveal and FIGHT for your right to stay (forthright).
+	LIE about condition (secretive), try to stay on.
+	QUIT rather than reveal it (ashamed).
+
+	PARENTS FIND OUT (mandatory). This time they know for sure, and
+	can tie it to sexual activity. They schedule new appointment.
+	
+	Bedtime: optional, try to masturbate and switch back.
+
+DAY 13
+
+DAY 14 (Monday September 20). SECOND DOCTOR VISIT (mandatory).
+	Doctor hears of mechanism, reports he&#39;s heard of other patients
+	with similar presentation. Asks about polio vaccine trial.
+	Tissue test.
+
+DAY 15
+
+DAY 16 (Wednesday September 22). TESTS COME BACK (mandatory).
+	Decide how to handle school (mandatory).
+	HIDE the condition; pretend player is ill (ashamed).
+	CONCEAL the symptoms; go to school in altered state (secretive).
+	REVEAL to the school; ask for help (forthright).
+
+DAY 17
+
+DAY 18
+
+DAY 19 (Saturday September 25). SCOUTING (mandatory).
+
+DAY 20
+
+DAY 21
+
+DAY 22
+
+DAY 23
+
+DAY 24
+
+DAY 25
+
+DAY 26 (Saturday October 2). SCOUTING (mandatory).
+
+DAY 27
+
+DAY 28</tw-passagedata><tw-passagedata pid="22" name="1948 Interactive Scenes" tags="" position="1600,650" size="100,100">This is passage is to organize the list of interactive scenes for 1948 as needed, and to serve as a visual landmark in the interface.</tw-passagedata><tw-passagedata pid="23" name="1948 SO-Male" tags="" position="1750,800" size="100,100">&lt;&lt;if $page == 0&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;No, you&#39;re not allowed to tell anybody we&#39;re going on dates,&quot; you explain to him. &quot;Mom and Pop would flip their lids if they found out anybody was carrying a torch for me. They think I&#39;m a //good// girl.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;You //are// a good girl,&quot; $so says. &quot;You&#39;re real swell. It&#39;s just awful tough for a guy, you know, when one minute you&#39;re kissing a gal, and the next minute you&#39;re real hard up.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;I&#39;m sure it is,&quot; you say, a little indifferently. You&#39;d heard the term //blue balls// before but you&#39;d never admit in polite company that you knew what it meant. Maybe to your girlfriend $gf. Maybe.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Aw gee, $name, you don&#39;t know what it&#39;s like,&quot; $so says, squirming on the bed and trying to adjust his trousers.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Anyway,&quot; you go on, &quot;my kid sister $sibnick is a real pill. If she ever found out we were going steady, she&#39;d tattle on me in two shakes of lamb&#39;s tail. She loves getting me in dutch with the folks.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Can&#39;t we just make out a little while longer?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;You should know better by now,&quot; you say. &quot;Besides, it&#39;s almost five-thirty, and my pop is going to be home any minute. You better shake a leg.&quot;&lt;/div&gt;
+&lt;&lt;display &quot;CleanReturn&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 1&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;I don&#39;t care if you tell anyone we&#39;re going steady,&quot; you say. &quot;Just not Mom and Pop. They&#39;d flip their lids if they find out I&#39;m bringing a boy up to my room. They think I&#39;m a //good// girl.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;You //are// a good girl,&quot; $so says. &quot;You&#39;re real swell. It&#39;s just awful tough for a guy, you know, when one minute you&#39;re kissing a gal, and the next minute you&#39;re real hard up.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;I&#39;m sure it is,&quot; you say, a little indifferently. You&#39;d heard the term //blue balls// before but you&#39;d never admit in polite company that you knew what it meant. Maybe to your girlfriend $gf. Maybe.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Aw gee, $name, you don&#39;t know what it&#39;s like,&quot; $so says, squirming on the bed and trying to adjust his trousers.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Anyway,&quot; you go on, &quot;my kid sister $sibnick is a real pill. If she ever found out we were going steady, she&#39;d tattle on me in two shakes of lamb&#39;s tail. She loves getting me in dutch with the folks.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Can&#39;t we just make out a little while longer?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;You should know better by now,&quot; you say. &quot;Besides, it&#39;s almost five-thirty, and my pop is going to be home any minute. You better shake a leg.&quot;&lt;/div&gt;
+&lt;&lt;display &quot;CleanReturn&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="24" name="1948 SO-Female" tags="" position="1900,800" size="100,100">&lt;&lt;if $page == 0&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;I promise not to tell anyone,&quot; you assure her.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;That&#39;s probably a good idea,&quot; $so says with a smile. &quot;I expect your folks would flip their lids if they found out you were courting a young lady.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Well, I&#39;m //trying// to,&quot; you say, squirming awkwardly on the bed and adjusting your trousers. Being a teenage boy in 1948 meant a permanent case of blue balls from puberty until marriage, unless you got lucky somehow. &quot;It&#39;s just awful tough for a guy, you know, when one minute you&#39;re kissing a gal, and the next minute you&#39;re real hard up.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;I&#39;m sure it is,&quot; she says with a smug little smile. What does //she// know about blue balls, anyhow?&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Aw gee, $sonick, you don&#39;t know what it&#39;s like,&quot; you complain.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;I certainly //don&#39;t.//&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;But it&#39;s probably a good thing, because my kid sister $sibnick is a real pill. If she ever found out we were going steady, she&#39;d tattle on me in two shakes of lamb&#39;s tail. She loves getting me in dutch with the folks.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;That&#39;s what sisters are for,&quot; $sonick smiles. &quot;Anyway, I&#39;d better hit the road. It&#39;s almost five-thirty. Your old man is going to be home any minute.&quot;&lt;/div&gt;
+&lt;&lt;display &quot;CleanReturn&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 1&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;Why does dating have to be so secret, anyway?&quot; you ask her. &quot;You&#39;re a real swell gal, and I&#39;m just busting at the seams to tell somebody about you.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;I&#39;m glad you think so,&quot; $so says with a smile, &quot;but we probably shouldn&#39;t spill the beans to your folks just yet. I bet they&#39;re going to flip their lids when they found out you&#39;re courting a young lady.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Well, I&#39;m //trying// to,&quot; you say, squirming awkwardly on the bed and adjusting your trousers. Being a teenage boy in 1948 meant a permanent case of blue balls from puberty until marriage, unless you got lucky somehow. &quot;It&#39;s just awful tough for a guy, you know, when one minute you&#39;re kissing a gal, and the next minute you&#39;re real hard up.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;I&#39;m sure it is,&quot; she says with a smug little smile. What does //she// know about blue balls, anyhow?&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Aw gee, $sonick, you don&#39;t know what it&#39;s like,&quot; you complain.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;I certainly //don&#39;t.//&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;But it&#39;s probably a good thing, because my kid sister $sibnick is a real pill. If she ever found out we were going steady, she&#39;d tattle on me in two shakes of lamb&#39;s tail. She loves getting me in dutch with the folks.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;That&#39;s what sisters are for,&quot; $sonick smiles. &quot;Anyway, I&#39;d better hit the road. It&#39;s almost five-thirty. Your old man is going to be home any minute.&quot;&lt;/div&gt;
+&lt;&lt;display &quot;CleanReturn&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="25" name="1948 Family Talk" tags="" position="2050,800" size="100,100">&lt;&lt;if $page == 0&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;What, Pop?&quot; you ask. &quot;What about polio?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;He brushes you off with some talk about an outbreak in South Dakota or North Carolina or someplace &quot;back East,&quot; as he calls anything on the other side of the Rocky Mountains. But Mom interrupts with a look of concern. &quot;Earl, don&#39;t you think we should tell the kids, if it&#39;s something they need to be on the lookout for?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Pop sighs and says, &quot;Just an article I saw in the paper. A woman flew up from California to be with her son before ... before the end. But polio got the little boy first.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Oh, dear,&quot; says Mom, clutching her throat.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Yes, I know,&quot; Pop says, sighing again. &quot;When are they finally going to lick this thing, that&#39;s what I want to know. They&#39;ve been working on that vaccine for, what? Ten years now? Eleven?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Seventeen,&quot; says Mom, glancing at you. &quot;I remember, because it was right before we got married and had $name. They had this doctor come to our school when I was a senior. Part of a vaccination trial. It didn&#39;t work, of course. A couple of the volunteers got polio anyway. And some of them had //kids// who got it. But they&#39;re working very hard, I&#39;m sure.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Pop rolls his eyes. &quot;Oh, yes, I&#39;m sure. Taking their sweet time, that&#39;s what I call it. I&#39;m telling you, we never would have taken this long in the Army. We&#39;d have gone in and got the job //done.// No nonsense, no sir.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Yes, dear.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Speaking of getting the job done,&quot; Pop says, putting down his fork. Pop never put down his fork at the dinner table unless he meant business. &quot;It&#39;s starting to look like rain next week, so I&#39;ve got to put in that new fence. This weekend, if I can, so I&#39;m going to have to really push hard to finish up. &lt;&lt;if $sex == &quot;male&quot;&gt;&gt;I&#39;ll need $name out back, helping me load and unload. Can you and $sibnick handle the chores inside the house?&quot;&lt;&lt;else&gt;&gt;It&#39;s just going to be me out there, so I&#39;ll have to leave the chores inside the house to you and the girls, if that&#39;s okay with you.&quot;&lt;&lt;endif&gt;&gt;&lt;/div&gt;
+&lt;&lt;if $sex == &quot;male&quot;&gt;&gt;--[[remind him you have Boy Scouts|1948 Family Talk][$page to 1]]
+--[[say you&#39;re happy to help|1948 Family Talk][$page to 2]]
+&lt;&lt;else&gt;&gt;--[[remind him you have Girl Scouts|1948 Family Talk][$page to 3]]
+--[[ask if you can help with the fence|1948 Family Talk][$page to 4]]
+&lt;&lt;endif&gt;&gt;&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 1&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;I&#39;ve got a Boy Scouts meeting that day, Pop,&quot; you remind him.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Oh?&quot; Pop says, and grunts. &quot;Again?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;That&#39;s just on Saturday,&quot; Mom says. Of course //she// would know, because she had to register as a Den Mother this year for a group of Cub Scouts. A lot of the rules got changed: the handbook, the caps, the whole nine yards. &quot;You can help your father on Sunday. You don&#39;t want to miss out on the chance to earn your Carpentry badge, do you? If you don&#39;t earn your merit badges by the time you turn eighteen, you won&#39;t make Eagle Scout.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;That&#39;s a swell idea, Mom!&quot; you say. &quot;Thanks!&quot; And it leaves part of Saturday free to go to the movies with $bf, which is pretty keen, too.&lt;/div&gt;
+&lt;&lt;set $page to 5&gt;&gt;&lt;&lt;display &quot;1948 Family Talk&quot;&gt;&gt;&lt;&lt;set $page to 1&gt;&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 2&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;That&#39;s a swell idea, Pop,&quot; you say. &quot;I can tell my scoutmaster that I&#39;m working on my Carpentry badge.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Oh, no, you shouldn&#39;t skip your Boy Scouts meeting,&quot; Mom urges you. &quot;You have a lot of merit badges to earn in the next two years if you want to make Eagle Scout. You can always help your father on Sunday.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Mom knew all about the rules for Boy Scouts because she had to register as a Den Mother this year for a group of Cub Scouts. A lot of the rules got changed: the handbook, the caps, the whole nine yards.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;As long as I get to practice with Pop&#39;s tools,&quot; you say. &quot;I have to know how to use a cross-cut saw, a plumb line, a chalk line -- there&#39;s a list in the new guidebook.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;You&#39;ll get the chance, don&#39;t worry, $name,&quot; Pop says. &quot;You&#39;re taking Wood Shop this year, too, don&#39;t forget.&quot;&lt;/div&gt;
+&lt;&lt;set $page to 5&gt;&gt;&lt;&lt;display &quot;1948 Family Talk&quot;&gt;&gt;&lt;&lt;set $page to 2&gt;&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 3&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;Daddy, I have my Girl Scouts meeting on Saturday,&quot; you object.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Oh, that&#39;s right,&quot; he grumbles.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;But you can help your father on Sunday,&quot; Mom urges you. &quot;Besides, you already got your Handywoman badge, back when you were an intermediate scout. You&#39;ll be able to put your skills to good use!&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;All right, Mother, I&#39;ll help out on Sunday,&quot; you promise her. Mom //would// know all about your Girl Scouts badges. She&#39;s a Troop Leader for a group of younger girls, and you&#39;ve already moved up from intermediate to senior scout.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Okay, Sunday, then,&quot; your father says.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Whatever you need, Daddy,&quot; you say. Giving up one of your weekend days isn&#39;t bad. At least if you&#39;re helping Pop on Sunday, you&#39;ll have some of Saturday free to go to the movies with $gf.&lt;/div&gt;
+&lt;&lt;set $page to 5&gt;&gt;&lt;&lt;display &quot;1948 Family Talk&quot;&gt;&gt;&lt;&lt;set $page to 3&gt;&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 4&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;That sounds perfect, Daddy!&quot; you say. &quot;I can tell my Troop Leader that I&#39;m needed around the house. Plus, I have my Handywoman merit badge.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Oh, no, you shouldn&#39;t skip your Girls Scouts meeting,&quot; Mom urges you. &quot;You have a lot of merit badges to earn in the next two years if you want to earn your Curved Bar. You can always help your father on Sunday.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;All right, Mother, I&#39;ll help out on Sunday,&quot; you promise her. Mom //would// know all about your Girl Scouts badges. She&#39;s a Troop Leader for a group of younger girls, and you&#39;ve already moved up from intermediate to senior scout.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Okay, Sunday, then,&quot; your father says.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Whatever you need, Daddy,&quot; you say. Giving up one of your weekend days isn&#39;t bad. At least if you&#39;re helping Pop on Sunday, you&#39;ll have some of Saturday free to go to the movies with $gf.&lt;/div&gt;
+&lt;&lt;set $page to 5&gt;&gt;&lt;&lt;display &quot;1948 Family Talk&quot;&gt;&gt;&lt;&lt;set $page to 4&gt;&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 5&gt;&gt;&lt;div class=&quot;indent&quot;&gt;$sibnick, who is only eleven, makes a face. &quot;Why can&#39;t I build the fence? I want to help.&quot;&lt;/div&gt;
+&lt;&lt;if $sex == &quot;male&quot;&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;You&#39;re a girl, $sibnick dear,&quot; Mom says. &quot;Besides, I&#39;ll need your help with the vacuuming and the dusting inside.&quot;&lt;/div&gt;
+&lt;&lt;else&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;Daddy&#39;s tools are too dangerous for girls, pumpkin,&quot; Pop says to her. &quot;I don&#39;t want you getting hurt.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;But //she&#39;s// allowed to help,&quot; $sibnick whines, pointing to you.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;She&#39;s older,&quot; Mom says. &quot;Besides, I&#39;ll need your help with the vacuuming and the dusting inside.&quot;&lt;/div&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;div class=&quot;indent&quot;&gt;&quot;I suppose,&quot; $sib grumbles.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;If you do a good job, you can help make upside-down cake,&quot; Mom says.&lt;/div&gt;
+&lt;&lt;display &quot;CleanReturn&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 6&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;Mom!&quot; you shout out into the hallway. &quot;Can you come here?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Mother comes into the upstairs hallway with an armload of sheets for the laundry. &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;&quot;Please don&#39;t shout at me across the house,&quot;&lt;&lt;else&gt;&gt;&quot;It&#39;s not ladylike to shout across the house, dear,&quot;&lt;&lt;endif&gt;&gt; she says. &quot;What is it? Is the hot water not working again?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;No, it&#39;s — it&#39;s something weird,&quot; you say, and you &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;pull down your pajamas a little&lt;&lt;else&gt;&gt;lift up your nightgown a little&lt;&lt;endif&gt;&gt; to show her what you mean.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Well, that&#39;s—&quot; she begins, and stops. &quot;My goodness! What happened? Did — did Dr Bennett make a mistake when you were—? But no, I used to change you when you were little, and — Earl!&quot; She stops rambling and calls for Pop. &quot;Earl, come here!&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Not Pop, please,&quot; you beg her. Even your voice sounds a little different. Not much, but a little &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;higher&lt;&lt;else&gt;&gt;deeper&lt;&lt;endif&gt;&gt; than yesterday.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Very well, cover yourself up,&quot; Mom says, fretting. &quot;But I think you need to see a doctor right away.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;When Pop arrives, Mom has to tell him the whole thing, including her muddled half of the conversation, in excruciating detail while you stand in the bathroom turning redder and redder. At last, Pop says, &quot;Why didn&#39;t you say anything sooner?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;It just happened, Pop,&quot; you say. &quot;This morning. Or maybe last night. I had a really weird dream, and I woke up like this. I — I&#39;m not exactly sure //when// it happened.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;What did you dream about?&quot; Mom asks.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;I don&#39;t remember,&quot; you say uncomfortably. &quot;It was just a dream, honestly.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;She stares at you for a moment, clucking her tongue. &quot;I guess there&#39;s nothing we can do about it right now,&quot; she says. &quot;You&#39;ll just have to go to school like that. I&#39;ll call Dr Bennett and make an appointment for you as soon as possible.&quot;&lt;/div&gt;
+&lt;&lt;display &quot;CleanReturn&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 7&gt;&gt;&lt;div class=&quot;indent&quot;&gt;You&#39;re not sure what in the world just happened to you, but you&#39;re not about to go //telling// anybody about it. You&#39;re not even sure you can face your friends at school like this. What if somebody found out?&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;When you&#39;ve had a moment to use the toilet — an all-new experience you&#39;re not likely to forget in a hurry — you scuttle back to your bedroom, hop in bed, and pull the blankets up to your nose. Eventually Mom passes your bedroom door with an armful of laundry and knocks one-handed. &quot;$name, time to get up for school.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;I don&#39;t feel well this morning,&quot; you moan, trying to sound extra pathetic. Your voice seems a little different — not much, just a little &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;higher&lt;&lt;else&gt;&gt;deeper&lt;&lt;endif&gt;&gt; than yesterday. &quot;I don&#39;t think I can go.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Oh, dear,&quot; Mom says. You hardly //ever// stay home sick from school, good scout-in-training that you are. &quot;I&#39;ll take your temperature and call the doctor.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;It&#39;s my stomach,&quot; you say, hoping to put off the dreaded Clifton glass thermometer your mom bought at Rexall Drug all those years ago. It took //eons// to read properly.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;We&#39;ll see,&quot; was her answer.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Of course, there was no fever, but she insisted on calling Dr Bennett anyway. The doctor must not have said anything conclusive, because Mom let you stay in bed. &quot;You&#39;d better go downstairs and telephone one of your friends and ask them to bring your homework over for you. I&#39;ll make chicken soup for lunch,&quot; she offers. &quot;That should settle your stomach. If that doesn&#39;t help, I&#39;ll bring up some castor oil.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Chicken soup, castor oil and the Clifton thermometer: Mom&#39;s solution for everything. But at least she&#39;s likely to leave you alone up in your room, mostly, while you sort out what to do about all ... all this.&lt;/div&gt;
+&lt;&lt;display &quot;CleanReturn&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 8&gt;&gt;&lt;div class=&quot;indent&quot;&gt;You&#39;re barely out the door before Mom is climbing the stairs, her footfalls thumping on each step with the tread of approaching doom.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;All right, $name, what&#39;s all this?&quot; Mom asks sternly, with $sibnick hiding behind Mom&#39;s skirts with a look of devilish glee. &quot;$sib just came downstairs with some wild story, and I want to know what you&#39;ve been telling her.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;She&#39;s just trying to get me grounded, that&#39;s all,&quot; you protest. It&#39;s a little white lie, perhaps, but it&#39;s got some truth to it.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Is this true, $sib?&quot; she demands. &quot;Are you telling stories?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;No, mama, I //saw// it,&quot; she says plaintively.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;And why were you able to see it?&quot; Mom asks in a shrewd voice. &quot;Why was $sibnick able to see anything at all? Were you showing it to $fr upstairs in your room? Were you thinking about playing Doctor with your little friend?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Mom, I wasn&#39;t playing Doctor!&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Then you&#39;d better have a good explanation why you had your underpants down when your sister came into the room,&quot; Mom says. &quot;Why don&#39;t you tell me what that explanation is, hmm?&quot;&lt;/div&gt;
+--[[explain it to her|1948 Family Talk][$path.push(&quot;Dot tattled&quot;), $page to 9]]
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 9&gt;&gt;&lt;div class=&quot;indent&quot;&gt;You don&#39;t have much of a choice. It&#39;s either admit to your mother that something strange happened last night, and you were asking $fr what to do, or allow $sib&#39;s falsehood to remain standing and permit Mom to think you were playing Doctor with another $girlboy[$fgen]. Increasingly it strikes you that the word &quot;another&quot; no longer applies, but you can&#39;t decide if that&#39;s worse or better, trouble-wise.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;So you explain the whole thing, and you let Mom see what happened to you overnight.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Hmmm,&quot; she says, her mouth a thin line. &quot;That&#39;s unusual. All right, I suppose I can understand why you were showing it to your friend, but honey, why didn&#39;t you tell //us?// &lt;&lt;if $path.includes(&quot;shameful TG&quot;)&gt;&gt;If you had to stay home from school because of this, then I wish you would have told me the reason why. Now I have to call Dr Bennett all over again and tell him what&#39;s //really// going on.&lt;&lt;else&gt;&gt;We&#39;re on your side. That&#39;s what family is //for.// Now first thing, we really need to call Dr Bennett and tell him what happened.&lt;&lt;endif&gt;&gt; And of course we&#39;ll have to tell the school. I&#39;m sure I have Mr Fordyce&#39;s number around here somewhere. He&#39;s still the principal, right?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Do we have to tell everybody?&quot; you ask.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Yes. We&#39;ll discuss it tonight over dinner,&quot; Mom says with finality. &quot;When your father gets home. I&#39;m sure that&#39;s what he&#39;s going to decide.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;And as for you, little lady,&quot; Mom says to $sibnick, grabbing her skinny arm sharply, &quot;you don&#39;t go barging in on people when they have the door closed. That&#39;s very rude. I&#39;ll be sure to tell your father about that, too.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;The look of evil triumph on $sibnick&#39;s face fades a little.&lt;/div&gt;
+&lt;&lt;display &quot;CleanReturn&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 10&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;I think we should tell the school what happened,&quot; you say, a little bit of the &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;Boy&lt;&lt;else&gt;&gt;Girl&lt;&lt;endif&gt;&gt; Scout honesty rising in you. &quot;They&#39;re going to have to know eventually. Maybe they could help us.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;That&#39;s a good idea,&quot; Pop says. &quot;What kind of help did you have in mind?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Well, you know,&quot; you say, guessing aloud. &quot;If we tell them what happened, maybe I don&#39;t have to do gym class with the rest of the $girlboy[$oppgen]s. I could do something else instead. Or maybe they&#39;d led me go to the school as a $girlboy[$gen] until it ... it, you know, I stop being one. I mean, it&#39;s not //my// fault this happened, right? They can&#39;t get too mad at me.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Let a $girlboy[$oppgen] into the school wearing $girlboy[$gen] clothes?&quot; Pop asks suspiciously. &quot;Gym classes and everything?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;We&#39;d write the school a note about gym class,&quot; Mom says. &quot;If they would accept that.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;And if they don&#39;t?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Maybe we ask the school to enroll $name under some other name, like &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;$fchoice.&lt;&lt;else&gt;&gt;$mchoice.&lt;&lt;endif&gt;&gt; We could say $nom[$gen]&#39;s a cousin that&#39;s staying with us, and maybe the school would play along.&quot;&lt;/div&gt;
+&lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;--[[ask to attend openly under your own name|1948 Family Talk][$sched to &quot;pussyboy schedule&quot;, $forthright += 2, $page to 12]]
+--[[ask to pretend to be a cousin|1948 Family Talk][$sched to &quot;girl schedule&quot;, $secretive += 1, $page to 12]]
+&lt;&lt;else&gt;&gt;--[[ask to attend openly under your own name|1948 Family Talk][$sched to &quot;dickgirl schedule&quot;, $forthright += 2, $page to 12]]
+--[[ask to pretend to be a cousin|1948 Family Talk][$sched to &quot;boy schedule&quot;, $secretive += 1, $page to 12]]&lt;&lt;endif&gt;&gt;&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 11&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;I don&#39;t think we should tell the school,&quot; you say, imagining the horrors in store if anybody in the principal&#39;s office let your secret slip. Oh, the teasing you&#39;d get! &quot;I don&#39;t think they&#39;d be very good at keeping all this a secret. They&#39;d have to tell all my teachers, and the school nurse, and somebody could find out, and then I&#39;d have to run off and join a freakshow or something.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;That&#39;s a good point,&quot; Pop says. &quot;People can be cruel. So what did you have in mind instead?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;I don&#39;t know,&quot; you say, trying to pin down your thoughts. &quot;Maybe we just don&#39;t tell them anything? Write me a note to get out of gym class, and maybe that&#39;s enough. By Monday I could be completely back to normal, don&#39;t you think?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Mom gives you a melancholy smile. &quot;We can always hope so.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;And if $nom[$oppgen] isn&#39;t?&quot; Pop asks bluntly.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;We could tell the school that $name is called, I don&#39;t know, &lt;&lt;if $startsex == &quot;female&quot;&gt;&gt;$fchoice&lt;&lt;else&gt;&gt;$mchoice&lt;&lt;endif&gt;&gt; or something, a distant cousin who&#39;s staying with us,&quot; Mom suggests. &quot;We&#39;ll say the real $name has taken ill, and could they please send the homework home. Then you&#39;ll just do the work for both sets of classes.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Why both?&quot; you ask.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;In case it //doesn&#39;t// go back to normal,&quot; Mom says with a simple shrug. &quot;You still want to graduate high school, don&#39;t you?&quot;&lt;/div&gt;
+&lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;--[[ask to keep it a secret|1948 Family Talk][$sched to &quot;secret girl schedule&quot;, $secretive += 2, $page to 12]]
+--[[ask to pretend to be a cousin|1948 Family Talk][$sched to &quot;girl schedule&quot;, $shameful += 3, $page to 12]]
+&lt;&lt;else&gt;&gt;--[[ask to keep it a secret|1948 Family Talk][$sched to &quot;secret boy schedule&quot;, $secretive += 2, $page to 12]]
+--[[ask to pretend to be a cousin|1948 Family Talk][$sched to &quot;boy schedule&quot;, $shameful += 3, $page to 12]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 12&gt;&gt;&lt;div class=&quot;indent&quot;&gt;Mom calls Mr Fordyce at home. Naturally, he was at dinner — just like everybody else in the world, probably — but he still made time to talk to your mother.&lt;/div&gt;
+&lt;&lt;if $sched == &quot;boy schedule&quot; or $sched == &quot;girl schedule&quot;&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;All right, it&#39;s sorted out,&quot; Mom says, hanging up the phone with a clatter. &quot;You&#39;re going to start attending school first thing tomorrow under the name &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;&lt;&lt;textbox &quot;$fname&quot; $fchoice2&gt;&gt; $lastname, or &lt;&lt;textbox &quot;$fnick&quot; $fchoice&gt;&gt; for short.&quot;&lt;&lt;else&gt;&gt;&lt;&lt;textbox &quot;$mname&quot; $mchoice2&gt;&gt; $lastname, or &lt;&lt;textbox &quot;$mnick&quot; $mchoice&gt;&gt; for short.&quot;&lt;&lt;endif&gt;&gt;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;And you&#39;ll pick up clothes tonight?&quot; Pop asks.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;I made some calls,&quot; Mom promises. &quot;Some of the PTA mothers have some hand-me-downs we can have. If you take your car and I take mine, we&#39;ll cover a lot more ground. Do you mind?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;No, no,&quot; Pop says, pushing himself away from the table. &quot;Let&#39;s get going. $name, you should start getting ready for bed.&quot;&lt;/div&gt;
+&lt;&lt;elseif $sched == &quot;pussyboy schedule&quot; or $sched == &quot;dickgirl schedule&quot;&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;All right,&quot; Mom says, hanging up the phone with a clatter. &quot;It took a little convincing, but Mr Fordyce has agreed to let you attend school under your own name. I&#39;m not sure if it&#39;s a good idea, myself, because I&#39;m //sure// those bullies at school are going to tease you when they find out about your ... your condition.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;What about clothes?&quot; Pop asks.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Oh, that&#39;s right,&quot; Mom says. &quot;I almost forgot. Mr Fordyce says you have to stick to the school dress code for $girlboy[$gen]s. If you switch back, then you stick to the dress code for $girboy[$oppgen]s again. I&#39;ll write you a note to get you out of the regular gym class and into something else.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;I can&#39;t just skip gym?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;No, it&#39;s required for all students, unless there&#39;s some reason they can&#39;t,&quot; Mom says.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;And you can,&quot; Pop says firmly. &quot;Look at you, you have two legs, two arms. There&#39;s got to be something you can do. I know guys who came back from the war who&#39;d //love// to have their arms and legs. You&#39;re not skipping gym, no sir.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;And I agree with your father,&quot; Mom says. &quot;All right, Earl, if you and I each take our cars, we&#39;ll be able to drive around and pick up some clothes. I made a few calls. Some of the mothers in the PTA have hand-me-downs we can have. $name, you&#39;d better start getting ready for bed.&quot;&lt;/div&gt;
+&lt;&lt;elseif $sched == &quot;secret girl schedule&quot; or $sched == &quot;secret boy schedule&quot;&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;All right, I think we&#39;re all settled,&quot; Mom says, hanging up the phone with a clatter. &quot;I didn&#39;t tell Mr Fordyce about your ... your condition. I just said you have to be excused from regular gym class for the rest of the year. They&#39;ll put you in an independent study program so you still get your exercise, but not with the other kids in your class.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Thanks, Mom.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;With a little bit of luck,&quot; Mom goes on, &quot;on Monday when we see Dr Bennett, he&#39;ll have a nice little remedy for you, and this will be all over soon.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;I sure hope so.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Me too, honey. All right, it&#39;s been a long day. You&#39;d better start getting ready for bed.&quot;&lt;/div&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;div class=&quot;indent&quot;&gt;&quot;All right,&quot; you say, standing and picking up your plate.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Leave it,&quot; Mom tells you. &quot;You&#39;ve had quite a scare today. I&#39;ll make $sib help wash the dishes tonight. $sibnick!&quot; she calls toward the stairs. &quot;Yes, I hear you, eavesdropping. Not very clever, little missy. You get in here and start clearing the table. You&#39;ve got dishes to do.&quot;&lt;/div&gt;
+&lt;&lt;display &quot;CleanReturn&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="26" name="SexSwitch" tags="" position="350,200" size="100,100">&lt;&lt;silently&gt;&gt;
+	&lt;&lt;if $sex == &quot;male&quot;&gt;&gt;
+		&lt;&lt;set $gen to 4&gt;&gt;
+		&lt;&lt;set $sex to &quot;female&quot;&gt;&gt;
+	
+	&lt;&lt;elseif $sex == &quot;female&quot;&gt;&gt;
+		&lt;&lt;set $gen to 3&gt;&gt;
+		&lt;&lt;set $sex to &quot;male&quot;&gt;&gt;
+	
+	&lt;&lt;endif&gt;&gt;
+	
+	&lt;&lt;set $lastmasc to $masc&gt;&gt;
+	&lt;&lt;set $lastfem to $fem&gt;&gt;
+	
+	&lt;&lt;set $masc += $mup&gt;&gt;
+	&lt;&lt;set $fem += $fup&gt;&gt;
+	
+	&lt;&lt;set $oppgen to 7 - $gen&gt;&gt;
+
+&lt;&lt;endsilently&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="1948 Dress Choices" tags="" position="2200,800" size="100,100">&lt;&lt;if $page == 0&gt;&gt;&lt;div class=&quot;indent&quot;&gt;You stuff a sock into your trousers. It doesn&#39;t look exactly right, even when it&#39;s balled up. You try pushing one sock inside another, and that&#39;s a little better, but still not quite right.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Getting the sock to stay in place is a little harder. It keeps wanting to drift this way and that as you walk. That problem is solved by tying the sock to your underwear with a rubber band.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;It works. For now.&lt;/div&gt;
+&lt;&lt;display &quot;CleanReturn&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 1&gt;&gt;&lt;div class=&quot;indent&quot;&gt;You stuff some toilet paper into your A-cup bra. It doesn&#39;t take much to fill out the cups. It doesn&#39;t look exactly right, and it takes some rearranging so the shape is correct.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;You can&#39;t decide whether you&#39;re glad your boobs are still so small, or whether you&#39;re disappointed in your lack of development. On the one hand, it makes it much easier to pull off the right look. On the other hand, all the other girls at your high school have developed much more than you have. Now you have nothing at all, and you&#39;re not sure how to feel about that.&lt;/div&gt;
+&lt;&lt;display &quot;CleanReturn&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="28" name="1948 Research" tags="" position="500,650" size="100,100">SCHOOL CURRICULUM
+The attack on Pearl Harbor in 1941 interrupted a decades-long progressive education movement emphasizing science, engineering, and math, and which focused on critical analysis of American institutions. After Pearl Harbor, when fear and paranoia set in, such progressive notions were scrapped in favor of the &quot;lifestyle adjustment curriculum.&quot;
+
+This was designed to teach life skills to the 60% of students who would not go on to post-secondary education. About 30% of students would graduate, and there were plenty of jobs available for this level of education. It proposed to teach American students to be good, patriotic (and pliable) citizens, claiming that the old progressive education taught children to be materialistic and gave them bankrupt morals. The &quot;lifestyle&quot; curriculum was criticized (at the time, and also later) for being too soft and non-academic, emphasizing daily life skills (like literacy) over rigorous study (like understanding and questioning what you read).
+
+Part of the reason for this focus was a renewed interest in integrating American education with national defense priorities. While recruiting soldiers for World War II, the Army had to reject hundreds of thousands of applicants for being illiterate. They also discovered how disorganized and non-standardized the curriculum could be across various states; the quality of education varied widely. There was also a shortage of people skilled in modern foreign languages.
+
+Homework was fairly unknown, especially at lower age levels; most high school students had less than 2 hours per evening. When the Soviets launched Sputnik in 1957 it forced a massive re-think of education in America vis-a-vis national defense priorities, and the burden of nightly homework began to ramp skyward.
+
+Courses: reading, grammar, written and mental arithmetic, social studies, science, family life, hygiene, health, religion, speech. Geography (maps), languages, gym, home economics, biology, shop (&quot;industrial arts&quot;). Photography.
+
+There would also be an emphasis on geography (especially map familiarity). Biology and home ec courses would start to teach first aid and nursing. During the war, schools would hold drives for paper and scrap metal. Intra-varsity athletics were emphasized, along with calisthenics drills, to increase student health in the event of national need. Social Studies courses focused on problems that related directly to national welfare -- unlike before the war, when the courses focused on critical problems within the US. (Our player in 1948 would have seen both of these techniques.)
+
+https://scholarworks.gsu.edu/cgi/viewcontent.cgi?article=1074&amp;context=mse_facpub
+
+Sample report card, 10th grade: art, gym, geometry?, study, world history, English, biology
+Sample report card, 12th grade: art, English, stenography, P.D.?, bookkeeping II, Law, Health-Gym-Study-Gym-Study
+Sample report card, 10th grade: English II, stenography I, Typing II, Bhp? Bkp? (could be Bookkeeping), Biology, Health
+Sample report card, 12th grade (1953-54): English, History PD, Health, Phys Ed., Chemistry, Spanish 2, Vocal Music
+Sample report card, gr unk (1943-44): English, typing, stenography, American history, Band, Orchestra, Vocal Music, Gym/Hygiene
+Sample report card, 12th grade (1944-45): English, Spanish, History, Civics, Economics, Mathematics. Commercial (Bookkeeping). Vocational (blank).
+
+BILLY: English, Health/Gym, History, Geometry, Vocal Music, Spanish, Home Economics
+
+BETTY: English, Health/Gym, Stenography, Bookkeeping, Vocal Music, Spanish, Home Economics
+
+Note: up until 1970 or so, it was common for boys to swim naked in gym class; suits &quot;of the simplest type&quot; were mandatory for girls. This is a fascinating sidelight into education in the 1940s, so I&#39;ll use it.
+
+
+
+
+
+</tw-passagedata><tw-passagedata pid="29" name="1948 English" tags="" position="2500,650" size="100,100">&lt;&lt;if $day == 2&gt;&gt;&lt;div class=&quot;indent&quot;&gt;Your first class of the day is English with Mrs Hull, who takes your name during roll call ($name &lt;&lt;textbox &quot;$lastname&quot; $lastname&gt;&gt;) without batting an eye. She starts everybody off with a copy of //As You Like It//, and explains about the assignment that will be due in one week&#39;s time.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;You will select some suitable classmates,&quot; Mrs Hull says in that precise, mannered way of hers, &quot;and perform for the class a short scene from the play. Get out your pencils, and I will read you the list of approved scenes.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Everyone in the class dutifully copies down the list.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Each scene may be performed by only one group,&quot; Mrs Hull continues. &quot;That way, we will cover most of the important parts of the play. You may find that there are more parts for men than for women. If that is the case, and your group does not have enough boys, girls are permitted to read the boys&#39; parts, or boys to read girls&#39; parts if it must come to that.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Around you, your classmates exchange embarrassed titters. Nobody wants to be //that// unfortunate soul, who has to read a part for the opposite sex. They have //no// idea what that would be really like, you decide.&lt;/div&gt;
+&lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;--&lt;&lt;link &quot;go to Physical Education&quot; &quot;1948 Gym&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;--&lt;&lt;link &quot;go to Stenography&quot; &quot;1948 Stenography&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;endif&gt;&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $day == 3&gt;&gt;
+
+
+&lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="30" name="1948 Gym" tags="" position="2650,650" size="100,100">&lt;&lt;if $day == 2&gt;&gt;&lt;div class=&quot;indent&quot;&gt;Your second class of the day is Physical Education and Hygiene, and you find yourself trooping off to the gymnasium with a few &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;boys&lt;&lt;else&gt;&gt;girls&lt;&lt;endif&gt;&gt; from your Engish class who are on the same schedule as you.&lt;/div&gt;
+&lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;What are we doing first?&quot; asks a tenth-grader named Tommy. &quot;Does anybody know?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;I hear it&#39;s swimming for four weeks,&quot; another boy answers.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Oh, gee,&quot; says Tommy, stricken. &quot;Not //swimming.//&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;What&#39;s the matter with swimming?&quot; the other boy asks. &quot;You go swimming all the time down at the lake.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Yes, but not //naked,//&quot; Tommy objects.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;The other boy laughs. &quot;Sure you do. I&#39;ve seen you go skinny-dipping before.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Besides, you know those swimsuits aren&#39;t hygenic,&quot; another boy points out. &quot;You wear clothes, you&#39;ll get the pool all dirty. Everybody knows that.&quot;&lt;/div&gt;
+&lt;&lt;else&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;What&#39;s old Mrs Bell going to make us do?&quot; asks one girl, a tenth-grader named Polly.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Four weeks of swimming,&quot; says another girl.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Oh no!&quot; Polly says, turning ashen.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;What&#39;s wrong with swimming?&quot; asks the other girl. &quot;You go swimming at the lake all the time.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;It&#39;s those horrible old school swimsuits,&quot; Polly explains with a shudder. &quot;You can see right through them.&quot;&lt;/div&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;div class=&quot;indent&quot;&gt;//Ugh. Swimming.// You hope against hope that you don&#39;t have to, but it turns out your worst nightmare has come true. $thisgym is going to make everybody swim.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Fortunately, that day will not be today. &quot;There&#39;s no need to dress for class today. Before we do any exercises, we&#39;ve got to get everybody measured and weighed in,&quot; $thisgym announces. &quot;It&#39;s important to have a way to measure physical fitness, so we can see if you are improving your bodies and your health.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Throughout the class, &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;$thisgym talks endlessly about the need for good, solid young bodies who are ready to fight for their country at a moment&#39;s notice. He doesn&#39;t let up for a minute, often booming in some poor boy&#39;s ear as he addresses the rest of the class.&lt;&lt;else&gt;&gt;$thisgym goes on and on about how young ladies these days have to stay in shape if they expect to catch a husband. It&#39;s an endless refrain. She often calls out specific girls who are a little under- or overweight, making loud suggestions on calisthenics and stretches the girl should start doing, and different foods she should be eating.&lt;&lt;endif&gt;&gt;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Luckily, measuring everybody up takes most of the whole class. &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;The gym instructor gives you a strange look when he notes your height, but he doesn&#39;t take any other awkward measurements of your strangely altered body, so that&#39;s good.&lt;&lt;else&gt;&gt;The gym instructor nods approvingly when she takes down your height, commenting you appear to have grown another inch over the summer. She does give you a strange look when taking measurements of your waist, shoulders, and hips, but instead of barking at you, she just purses her lips and says, &quot;Well, you&#39;ll develop soon enough.&quot;&lt;&lt;endif&gt;&gt;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Still, you&#39;re going to have to do something about this whole swimming thing. Is there any way you can get out of it?&lt;/div&gt;
+&lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;--&lt;&lt;link &quot;go to History&quot; &quot;1948 History&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;--&lt;&lt;link &quot;go to Vocal Music&quot; &quot;1948 Vocal Music&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;endif&gt;&gt;
+&lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="31" name="1948 History" tags="" position="2800,650" size="100,100">&lt;&lt;if $day == 2&gt;&gt;&lt;div class=&quot;indent&quot;&gt;History class passes uneventfully, which is a relief. $hist passes out textbooks — they&#39;re all brand new, and all have patriotic flags imprinted in black on the canvas covers.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;We have new textbooks this year,&quot; $hist announces. &quot;We want to make sure all of our students have a firm grounding in American history, and that we all understand what a unique and special country this is.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;It strikes you as a little strange. You remember your teachers in previous history classes weren&#39;t afraid to criticize social issues in America. This textbook seems filled with nothing but abject praise for everything about America, and no mention of any issues or problems that might need improvement.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;$hist&#39;s reasoning soon becomes clear. &quot;The government wants to make certain that we all know what it takes to be good citizens, in light of the Communist threat which stretches around the world,&quot; he says. &quot;That means Congress is taking a much greater interest in any possible Communist threats to our way of life, including how we teach subjects like this one. We can&#39;t be too careful. Now, this might be a little different from history classes you have taken in the past--&quot; he coughs nervously-- &quot;but if any of you has any questions, feel free to see me after class.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;At least nobody says anything about the way you look.&lt;/div&gt;
+--&lt;&lt;link &quot;go to Vocal Music&quot; &quot;1948 Vocal Music&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="32" name="1948 Stenography" tags="" position="2950,650" size="100,100">&lt;&lt;if $day == 2&gt;&gt;&lt;div class=&quot;indent&quot;&gt;The first day of stenography class is pretty dull. You&#39;re bundled into a stuffy, warm classroom with a crowd of other girls — it&#39;s hard not to think of them as //other// girls, in spite of what has happened to you — to listen to $steno, a boring old woman with a droning voice that makes you want to fall asleep. She spends most of the first class babbling on about how useful stenography is.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Many of you girls will go on to become secretaries,&quot; she says. &quot;Or you might work for someone important, like a doctor or a lawyer, where note-taking is very useful. Even if you don&#39;t go on to a career of your own, you will find stenography is very valuable for taking notes over a telephone, because shorthand enables you to write very quickly so you don&#39;t miss anything.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;//Maybe I won&#39;t become a secretary,// you think to yourself, trying to ignore the cock you&#39;re carrying under several concealing layers of fabric. //Not with one of __these.__ I could be the doctor or the lawyer, I bet.//&lt;/div&gt;
+--&lt;&lt;link &quot;go to Physical Education&quot; &quot;1948 Gym&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="33" name="1948 Vocal Music" tags="" position="3100,650" size="100,100">&lt;&lt;if $day == 2&gt;&gt;&lt;div class=&quot;indent&quot;&gt;Your teacher for Vocal Music is $music, the same instructor you had last year for 9th grade, and the year before that in junior high school. She usually has this bright, frazzled look about her, as if she has too many students and not enough brain power to keep track of it all.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;This year, she seems a little calmer. &quot;I&#39;m so glad to see so many of your lovely faces again this year,&quot; she says warmly. &quot;If any of you has a younger brother or sister, you might have heard that the school district has finally hired another music teacher for elementary and junior high, which will leave me more time for all of my high school students.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;You remember the teacher shortages of 1946. After the war, there just weren&#39;t enough teachers to go around.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;The first thing we&#39;re going to do is sing the national anthem, and then the school song,&quot; she says. &quot;I&#39;ll go around the room as you&#39;re singing and listen to your voices, because I think some of them might still be changing. Then I can separate you into your proper registers.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Fortunately, it doesn&#39;t sound like your voice has changed much this year. &lt;&lt;if $startsex == &quot;female&quot;&gt;&gt;It might be a //little// deeper, but lots of girls&#39; voices dropped at least a tiny bit.&lt;&lt;else&gt;&gt;It might be a //little// higher, but not so much that $music is likely to notice.&lt;&lt;endif&gt;&gt; None of the other students around you mention anything, anyway.&lt;/div&gt;
+--&lt;&lt;link &quot;go to lunch&quot; &quot;CYCLE&quot;&gt;&gt;&lt;&lt;set $cyc++&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="34" name="1948 Spanish" tags="" position="3250,650" size="100,100">&lt;&lt;if $day == 2&gt;&gt;&lt;div class=&quot;indent&quot;&gt;Spanish class with $span is right after lunch, and all the students file into the classroom with a festive, first-day exuberance. They&#39;ve met all their old friends at the cafeteria, just like you and $fr did, and they&#39;re not quite ready to go back to learning.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;$span gets everybody started with some basic introductions in Spanish, and you and your classmates are chatting again.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;¡Hola!&quot; you say to the $girlboy[$gen] next to you. &quot;Me llamo $name.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Mucho gusto,&quot; $nom[$gen] says. &quot;Me llamo &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;Eddie.&quot;&lt;&lt;else&gt;&gt;Nancy.&quot;&lt;&lt;endif&gt;&gt;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;&quot;Encantada,&quot;&lt;&lt;else&gt;&gt;&quot;Encantado,&quot;&lt;&lt;endif&gt;&gt; you reply politely.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;$span is nearby and happens to hear. &quot;No, no,&quot; she murmurs, moving closer. &quot;That&#39;s the wrong form. Remember, if you&#39;re a $girlboy[$oppgen], you say &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;//encantado//, with an O. It means you&#39;re male.&lt;&lt;else&gt;&gt;//encantada//, with an A. It means you&#39;re female.&lt;&lt;endif&gt;&gt; Now try again.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Blushing bright pink, you correct yourself. How could you have gotten that mixed up, today of all days? You&#39;re //definitely// a &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;boy.&lt;&lt;else&gt;&gt;girl.&lt;&lt;endif&gt;&gt; Definitely.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Right?&lt;/div&gt;
+&lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;--&lt;&lt;link &quot;go to Geometry&quot; &quot;1948 Geometry&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;--&lt;&lt;link &quot;go to Bookkeeping&quot; &quot;1948 Bookkeeping&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;endif&gt;&gt;
+&lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="35" name="1948 Geometry" tags="" position="3400,650" size="100,100">&lt;&lt;if $day == 2&gt;&gt;&lt;div class=&quot;indent&quot;&gt;After Spanish comes Geometry. Hopefully, there&#39;s no way you can embarrass yourself in //this// class.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Unfortunately, the instructor, $geom, is the same one you have for gym class. As if carrying on directly from his previous speech in the gymnasium, he goes on and on about how the Army needs good, brave men to step up and learn to become engineers and cartographers. &quot;Geometry is a useful skill,&quot; he tells the class. &quot;In this class, we will help you to read maps and triangulate distances, to find areas and make calculations for all kinds of construction, and we&#39;ll even do some experiments in the field. I have some lessons planned where you must follow directions on a map, and then calculate the distance to a hidden gun emplacement.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;The boys in the class — the lucky ones who haven&#39;t had any strange transformations in the middle of the night — raise a cheer at the prospect. You just feel a little sick. Somehow, even mathematics has been turned into a boys-only club, and you&#39;re not quite sure whether you belong to that club any more.&lt;/div&gt;
+--&lt;&lt;link &quot;go to Wood Shop&quot; &quot;1948 Wood Shop&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="36" name="1948 Bookkeeping" tags="" position="3550,650" size="100,100">&lt;&lt;if $day == 2&gt;&gt;&lt;div class=&quot;indent&quot;&gt;Bookkeeping is taught by $bkp, an older man with a military bearing and a no-nonsense haircut.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;In this class, you will learn the basics of business math skills. These are applicable skills for any kind of business, whether you are planning to take over your father&#39;s shoe store, or if you&#39;re going to start your own construction business. You young ladies may also use these math skills for running a household and making a budget for you and your husband,&quot; he adds, as an afterthought.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;//Oh really? Then my husband is going to be in for a surprise,// you think with a mixture of humor and dread.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Those of you who graduate high school and go on to college,&quot; $bkp continues, &quot;will be able to take courses in higher mathematics later on. This course will focus on the practical, every-day life skills that you&#39;ll need to be a prosperous businessman. Or even a savvy homemaker.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;He passes out textbooks after that, and you&#39;re left to wonder which one of those two things you&#39;re likely to be.&lt;/div&gt;
+--&lt;&lt;link &quot;go to Home Economics&quot; &quot;1948 Home Economics&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="37" name="1948 Home Economics" tags="" position="3700,650" size="100,100">&lt;&lt;if $day == 2&gt;&gt;&lt;div class=&quot;indent&quot;&gt;The girls gather for Home Economics in a brightly-lit room filled with home appliances: stoves, ironing boards, sewing machines, and all kinds of household tools. The instructor is $homeec, a youthful woman with a cheery smile, a Midwestern twang, and a frilly apron over her day dress. She assures the class that she has a science degree in Household Management from the University of Iowa.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;In order to run a successful home,&quot; $homeec says in a clear voice, &quot;the modern woman is going to have to know not only how to //use// all of her labor-saving machines, but how to conduct her own repairs. Imagine it, ladies: you&#39;re cooking dinner for your husband, and you&#39;re making a nice aspic. Let&#39;s say you&#39;re making jellied eggs. You&#39;re mixing up the gelatin. Suddenly, the Mixmaster breaks. How are you going to manage?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;The girls exchange concerned looks. &quot;Use a hand beater?&quot; one asks timidly.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Possibly, yes. That&#39;s one way to do it. But after this class,&quot; $homeec says, &quot;you&#39;ll be able to take apart your own Mixmaster and see what&#39;s wrong. You&#39;ll be able to repair that loose wire, or change out a frayed cord, or replace a bad fuse, all by yourself. Not only is it economical, and it will save your family money, but you&#39;ll never have to worry your husband about little household chores like this. That aspic will come out of the refrigerator on time!&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;A girl named Mandy raises her hand, with a worried look on her face. &quot;$homeec,&quot; she says, &quot;aren&#39;t these machines full of oil and grease and such?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Some of them, yes,&quot; $homeec says gravely, &quot;but with the right soaps and detergents, you&#39;ll be able to clean up any messes. We don&#39;t want you girls to worry about getting your hands dirty. Remember, most of your mothers worked in the factories during the war!&quot; She gives the class an encouraging smile. &quot;And just in case we ever need you young ladies to march off to the factory floors again, we need to make sure you&#39;re familiar with basic household tools.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Somehow, you think another fate might be in store for you, if anybody ever finds out what&#39;s happened underneath your skirt.&lt;/div&gt;
+&lt;&lt;display &quot;CleanReturn&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="38" name="1948 Wood Shop" tags="" position="3850,650" size="100,100">&lt;&lt;if $day == 2&gt;&gt;&lt;div class=&quot;indent&quot;&gt;The Wood Shop teacher is a grizzled old man with a cast eye named $shop, who is missing the first two fingers on his right hand.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;This!&quot; he calls out gruffly, holding up his disfigured hand. &quot;This, boys, is the kind of thing that can happen to you, if you don&#39;t listen carefully to me and you don&#39;t use the proper safety equipment in this class. I will be signing you off on every piece of equipment in my shop before you are allowed to touch it. You see the yellow lines on the floor? Right there, around the band saw, and the lathe? Those are your safety lines. If you&#39;re not using that tool, you must stand behind that yellow line. Yes, you,&quot; he says, pointing to a boy with a raised hand.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;How did you lose your fingers?&quot; the boy asks.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;In the war,&quot; $shop says, looking down. &quot;It&#39;s a story for later. I&#39;ll tell you boys some other time.&quot; He seems uncomfortable, and moves on quickly. &quot;Believe me, you do not want to lose part of your hand! Imagine not being able to go fishing, or shoot a bow at summer camp. Imagine not being able to work at your father&#39;s store because you can&#39;t carry anything heavy.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;//I can imagine it,// you think to yourself.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;And that is why I expect each one of you to pay close attention. If I see you daydreaming or lollygagging, I will send you out of class for the day, and you will get a zero on attendance. No exceptions.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Are we going to work on any metals this year?&quot; asks one boy.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Raise your hand first, Johnny. No, we are not doing any metals this year. The Industrial Arts program has expanded to a second course, just for metalworking and machining, so if you would rather be in that course, talk to the school secretary and get your class changed. Yes, you.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;The first boy speaks, his eyes still fixed on $shop&#39;s mangled right hand. &quot;What if we don&#39;t want to take shop any more?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;It&#39;s mandatory,&quot; $shop says curtly. &quot;These are skills every boy should learn. You can&#39;t be much of a man unless you can fix things up around the house.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;//There&#39;s another qualification,// you think. //And right now, I don&#39;t meet it.//&lt;/div&gt;
+&lt;&lt;display &quot;CleanReturn&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="39" name="1948 Schedule Chooser" tags="" position="2350,650" size="100,100">&lt;&lt;silently&gt;&gt;
+
+	Here we have to choose which schedule the player will adhere to
+	on any specific day. This means we calculate the following:
+	
+	1. Is the player presently male or female?
+	2. Is the player known to be a Zeta?
+		a. The school knows the player is a Zeta.
+			i. Player must attend sex-appropriate classes.
+			ii. Player may attend previous classes, with exemptions.
+		b. The school doesn&#39;t know the player is a Zeta.
+			i. Player is masquerading as starting sex.
+			ii. Player is masquerading as a new student of opp sex.
+
+	The logic goes like this:
+	
+	KNOWN TG: the school knows
+		REVEAL TG: you&#39;re open about becoming opp sex
+			RESULT: same schedule, with exceptions (skip gym, etc).
+		NON-REVEAL TG: you&#39;re hiding when you&#39;re the opp sex
+			RESULT: masquerade as opp sex; opp schedule, w exceptions.
+	UNKNOWN TG: the school has no idea
+		REVEAL TG: you&#39;re open about becoming opp sex
+			RESULT: masquerade as opp sex; opp schedule, no exceptions.
+		NON-REVEAL TG: you&#39;re hiding when you&#39;re the opp sex
+			RESULT: same schedule, no exceptions (skip class or bring
+			a note from home).
+
+	boy schedule: player is boy or dickgirl; participates fully as a
+		male in that class
+	girl schedule: player is pussyboy or girl; participates fully as a
+		female in that class
+	
+	pussyboy schedule: player is pussyboy; school excludes certain
+		classes while the player is unable to participate
+	dickgirl schedule: player is dickgirl; school excuses certain
+		classes when the player is unable to participate
+	
+	secret girl schedule: player is pussyboy; participates in class but
+		has to hide certain things or bring a note
+	secret boy schedule: player is dickgirl; participates in class but
+		has to hide certain things or bring a note
+
+	&lt;&lt;if $startsex == &quot;male&quot; and $sex == &quot;male&quot;&gt;&gt;
+		&lt;&lt;set $sched to &quot;boy schedule&quot;&gt;&gt;
+	&lt;&lt;elseif $startsex == &quot;male&quot; and $sex == &quot;female&quot;&gt;&gt;
+		&lt;&lt;if $path.includes(&quot;known zeta&quot;)&gt;&gt;
+			The school knows the player is a pussyboy.
+			
+			&lt;&lt;if $path.includes(&quot;reveal TG&quot;)&gt;&gt;
+				The player is open about the change. School agrees to
+				enroll player under an opposite-sex identity.
+				&lt;&lt;set $sched to &quot;girl schedule&quot;&gt;&gt;
+				
+			&lt;&lt;else&gt;&gt;
+				The player is shameful or secretive about the change.
+				The school agrees to let the player continue to stay
+				enrolled under the same name, and excuses player from
+				certain classes.
+				&lt;&lt;set $sched to &quot;pussyboy schedule&quot;&gt;&gt;
+			
+			&lt;&lt;endif&gt;&gt;
+		&lt;&lt;else&gt;&gt;
+			The school has no idea the player is a Zeta.
+			
+			&lt;&lt;if $path.includes(&quot;reveal TG&quot;)&gt;&gt;
+				The player is open about the change. The parents enroll
+				the player under an opp-sex identity, unbeknownst to
+				the school.
+				&lt;&lt;set $sched to &quot;girl schedule&quot;&gt;&gt;
+				
+			&lt;&lt;else&gt;&gt;
+				The player is shameful or secretive about the change.
+				Player attends classes, but has to arrange ways to
+				skip required events (maybe with a note from home).
+				&lt;&lt;set $sched to &quot;secret girl schedule&quot;&gt;&gt;
+			
+			&lt;&lt;endif&gt;&gt;
+		&lt;&lt;endif&gt;&gt;
+	&lt;&lt;elseif $startsex == &quot;female&quot; and $sex == &quot;female&quot;&gt;&gt;
+		&lt;&lt;set $sched to &quot;girl schedule&quot;&gt;&gt;
+	&lt;&lt;elseif $startsex == &quot;female&quot; and $sex == &quot;male&quot;&gt;&gt;
+		&lt;&lt;if $path.includes(&quot;known zeta&quot;)&gt;&gt;
+			The school knows the player is a dickgirl.
+			
+			&lt;&lt;if $path.includes(&quot;reveal TG&quot;)&gt;&gt;
+				The player is open about the change. School agrees to
+				enroll player under an opposite-sex identity.
+				&lt;&lt;set $sched to &quot;boy schedule&quot;&gt;&gt;
+				
+			&lt;&lt;else&gt;&gt;
+				The player is shameful or secretive about the change.
+				The school agrees to let the player continue to stay
+				enrolled under the same name, and excuses player from
+				certain classes.
+				&lt;&lt;set $sched to &quot;dickgirl schedule&quot;&gt;&gt;
+			
+			&lt;&lt;endif&gt;&gt;
+		&lt;&lt;else&gt;&gt;
+			The school has no idea the player is a Zeta.
+			
+			&lt;&lt;if $path.includes(&quot;reveal TG&quot;)&gt;&gt;
+				The player is open about the change. The parents enroll
+				the player under an opp-sex identity, unbeknownst to
+				the school.
+				&lt;&lt;set $sched to &quot;boy schedule&quot;&gt;&gt;
+				
+			&lt;&lt;else&gt;&gt;
+				The player is shameful or secretive about the change.
+				Player attends classes, but has to arrange ways to
+				skip required events (maybe with a note from home).
+				&lt;&lt;set $sched to &quot;secret boy schedule&quot;&gt;&gt;
+			
+			&lt;&lt;endif&gt;&gt;
+		&lt;&lt;endif&gt;&gt;
+	&lt;&lt;endif&gt;&gt;
+
+
+	&lt;&lt;if $day == 2&gt;&gt;
+		&lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;
+			&lt;&lt;set $thisgym to $mgym&gt;&gt;
+			&lt;&lt;set $othergym to $fgym&gt;&gt;
+		&lt;&lt;else&gt;&gt;
+			&lt;&lt;set $thisgym to $fgym&gt;&gt;
+			&lt;&lt;set $othergym to $mgym&gt;&gt;
+		&lt;&lt;endif&gt;&gt;
+	&lt;&lt;else&gt;&gt;
+		&lt;&lt;if $sched == &quot;boy schedule&quot; or $sched == &quot;pussyboy schedule&quot; or $sched == &quot;secret girl schedule&quot;&gt;&gt;
+			&lt;&lt;set $thisgym to $mgym&gt;&gt;
+			&lt;&lt;set $othergym to $fgym&gt;&gt;
+
+		&lt;&lt;else&gt;&gt;
+			&lt;&lt;set $thisgym to $fgym&gt;&gt;
+			&lt;&lt;set $othergym to $mgym&gt;&gt;
+
+		&lt;&lt;endif&gt;&gt;
+	&lt;&lt;endif&gt;&gt;
+
+&lt;&lt;endsilently&gt;&gt;</tw-passagedata><tw-passagedata pid="40" name="1948 Skip First Day" tags="" position="2350,800" size="100,100">&lt;&lt;if $page == 0&gt;&gt;&lt;div class=&quot;indent&quot;&gt;True to her word, Mom returned the castor oil, her all-purpose remedy for any kind of stomach ailment, and she made you drink two spoonfuls. It means you&#39;ll have to spend the next several hours close to the toilet, and that makes you reconsider the idea of playing sick. You can&#39;t keep this up forever or you&#39;ll have to sleep in the bathroom until you turn eighteen.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Apart from that, however, she leaves you to your own devices. At eight-thirty, she announces that she&#39;s leaving to drive $sibnick to school, which starts a little later than yours. &quot;And then I&#39;ll go to the grocery store,&quot; she calls up the stairs. &quot;If I&#39;m making chicken soup, we&#39;ll need a few things.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Thanks, Mom!&quot; you call back.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;If you&#39;re feeling up to it,&quot; she says, &quot;you might have a hot bath while I&#39;m out. I find that helps me sometimes.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Okay!&quot;&lt;/div&gt; You feel strange shouting, as if Mom is going to recognize some change in your voice.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;But she doesn&#39;t say anything about it. A few minutes later and you hear $sib thundering down the stairs, then back up to retrieve her forgotten satchel, then back down again. The front door closes with a click. You hear the sound of Mom&#39;s old Packard starting fitfully to life. It drives away.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;The house falls eerily silent.&lt;/div&gt;
+--[[go check yourself in the hall mirror|1948 Skip First Day][$page to 1]]
+--[[sneak downstairs for some breakfast|1948 Skip First Day][$page to 2]]
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 1&gt;&gt;&lt;div class=&quot;indent&quot;&gt;You haven&#39;t really had a proper chance to do this. A brief survey, if that, in the bathroom. Now that the house is yours and there&#39;s no danger of anyone walking in on you, you rush to the full-length mirror hanging at the top of the stairs. &lt;&lt;if $startsex == &quot;female&quot;&gt;&gt;You have a vanity mirror, but it&#39;s fairly small, and it&#39;s set at desk height.&lt;&lt;else&gt;&gt;You have a small facial mirror for combing your hair, but it&#39;s small and doesn&#39;t show much.&lt;&lt;endif&gt;&gt; The mirror in the hall is better.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;You peel off your &lt;&lt;if $startsex == &quot;female&quot;&gt;&gt;nightgown, your girdle, and all your layers of underwear,&lt;&lt;else&gt;&gt;pajama top and bottom, kick off your underwear, &lt;&lt;endif&gt;&gt; and get a good look at what you&#39;re dealing with.&lt;/div&gt;
+&lt;&lt;if $startsex == &quot;female&quot;&gt;&gt;&lt;div class=&quot;indent&quot;&gt;You&#39;re a boy, all right. There&#39;s no doubt about it. Your whole body says so.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Your shoulders are about the same width, maybe a bit broader, and you have slightly more muscle. There&#39;s a few little tufts of hair on your chest, and your boobs are so flat — disappeared entirely, actually — that you can see the pectorals underneath. There&#39;s even a faint trail of hairs on your belly leading downward from your navel. And hairs on your shoulders. And hairs on your forearms. Hairs everywhere.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Your hands are a tiny bit bigger. Not much, but a little. Your chin seems a fraction more square, and your brow slightly more prominent. If you didn&#39;t know better, at first glance you&#39;d say this was the face of a teenage boy. But it&#39;s still you. You frown at your face closely, running your fingers on your chin. No signs of stubble, but maybe just a few wipsy hairs on your upper lip.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;And the penis, of course. It hangs there, getting in the way, a shaft and a hanging sack containing your testicles, sitting there like a new student in class you&#39;ve never met before. It&#39;s hard to stand in the usual way, feet close, thighs pressed together. You feel pinched up, like your balls need a little room to breathe. When your feet are spread apart, it&#39;s much more comfortable.&lt;/div&gt;
+&lt;&lt;else&gt;&gt;&lt;div class=&quot;indent&quot;&gt;You&#39;re a girl, all right. There&#39;s no doubt about it. Your whole body says so.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Your shoulders are a fraction more narrow, and your arms seem to have lost some muscle. They look like pipestems. You weren&#39;t all that strong before, but now you look practically anemic. The wisps of chest hair that you had been carefully cultivating are gone, as is the hair on your lower belly. Even the hair on your arms is finer and fainter than before. And your nipples seem prouder. Puffier. Your chest, never in the league of a Charles Atlas to begin with, seems oddly squishy.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Your hands are a tiny bit smaller and more slender. Not so much that you&#39;d notice unless you knew what to look for. Your chin seems less prominent, your jaw more delicate. If you didn&#39;t know better, at first glance you&#39;d say this was the face of a teenage girl. But it&#39;s still you. You frown at your face closely, running your fingers on your chin. No signs of stubble. None at all. Not even those telltale little hairs on your upper lip.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;And your cock is missing, of course. It used to just //be// there, like an old friend, whenever you glanced at yourself. Now it&#39;s absent, like a student suddenly missing from class who leaves an empty desk behind. There&#39;s nothing there except a small breeze between your legs that makes you feel peculiarly vulnerable. If you stand with your feet close and your thighs pressed together, that feeling is a little less bothersome.&lt;/div&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;div class=&quot;indent&quot;&gt;&quot;Okay, $name,&quot; you tell your naked reflection. &quot;Now what?&quot;&lt;/div&gt;
+--[[take a bath|1948 Skip First Day][$page to 3]]
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 2&gt;&gt;&lt;div class=&quot;indent&quot;&gt;You&#39;ve been ravenously hungry ever since you woke up. It&#39;s time for some breakfast.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Checking to make sure the coast is clear, even though you&#39;re positive that Mom has already left, you creep down the stairs. There&#39;s no sign of anyone, so you relax and head for the kitchen.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;There&#39;s a little Malt-O-Meal left on the stovetop, although all the rest of the breakfast dishes have been scrubbed and tucked away in the drainage rack beside the sink. You manage to eat some — cold, unfortunately — and that helps a little. Now you don&#39;t feel quite so empty.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;The remains of Dad&#39;s morning newspaper are strewn about the kitchen table. All the sections have been separated, folded backward, and turned this way and that. This is usually how he leaves the newspaper in the morning. Mom has a look through the headlines and flips through the classified ads, then she tidies it away. Eventually the newspaper ends up in the firewood storage bin next to the kindling.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;As you glance over the newspaper, the word //polio// catches your eye.&lt;/div&gt;
+--[[check newspaper about polio|1948 Skip First Day][$page to 4, $path.push(&quot;polio newspaper&quot;)]]
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 3&gt;&gt;&lt;div class=&quot;indent&quot;&gt;Since your mother mentioned it, you decide a hot bath might help you throw off some of this worry. It might not change you back to normal, but it certainly couldn&#39;t hurt. There&#39;s even some soap flakes, so you can have a nice modest bubble bath, &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;although it&#39;s going to make you feel a bit like Ava Gardner in //One Touch of Venus//, that movie $so dragged you to last month.&lt;&lt;else&gt;&gt;just like Ava Gardner in //One Touch of Venus//, that movie you dragged $so to last month.&lt;&lt;endif&gt;&gt;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;At first, it&#39;s quite relaxing. The hot water washes away your accumulated tension, and the mounds of bubbles conceal the shape of your body beneath the water so you don&#39;t have to think about it.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;But bubbles can only do so much, and eventually your hands brush up against the wrong bit of flesh, or your thighs slide together from all that slippery soap, and you notice all over again that your body isn&#39;t the same shape as it always was. Your very skin is no longer so familiar to you.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Should you try to acquaint yourself with your body? Explore with your hands? You have to clean yourself, after all.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;With your hands, you start exploring your new flesh. Gingerly. Guiltily. It goes against everything your &lt;&lt;if $startsex == &quot;female&quot;&gt;&gt;mother says, about how good Girl Scouts don&#39;t get merit badges playing panty polo.&lt;&lt;else&gt;&gt;father says, that you&#39;ll never make Eagle Scout by getting merit badges in pocket pool.&lt;&lt;endif&gt;&gt; On the other hand, $thisgym is always going on about &quot;hygiene,&quot; which means cleanliness, and you&#39;ve never //been// in this shape before, so you&#39;re sure it&#39;s never been cleaned.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;You &lt;&lt;if $startsex == &quot;female&quot;&gt;&gt;touch your new penis daintily, withdrawing quickly, but nothing happens. It doesn&#39;t do anything. It certainly shows no signs of becoming enormous and randy, like Mildred Sacks said penises do sometimes. There&#39;s just some extra flesh there. You can touch it and pull it, but it remains inert.&lt;&lt;else&gt;&gt;prod yourself down there, going by feel, not sure what you&#39;ll find. There is some pliable flesh, like lips, with a warm opening in between if you poke around a little. Nothing unusual happens. Tentatively, you feel around and find a little knob of flesh. That must be the magic button, which is what Jimmy O&#39;Toole called that secret part of a woman that makes her go crazy for you. But this little nub doesn&#39;t seem to do anything.&lt;&lt;endif&gt;&gt;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Disappointed, you finish your bath. You were half-expecting some big, exciting sensations from your new equipment. Changing into a $girlboy[$gen] hardly seems worth the trouble so far.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;There&#39;s got to be //somebody// you can talk to about all of this.&lt;/div&gt;
+--[[call doctor|1948 Skip First Day][$page to 5, $path.push(&quot;call doctor&quot;)]]
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 4&gt;&gt;&lt;div class=&quot;indent&quot;&gt;The headline reads MORE BAD NEWS FOR KIND POLIO VACCINE.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;You turn the newspaper toward you and read the article. Apparently, a number of years ago a doctor named Horace Kind had run some experiments on a new polio vaccine. It hadn&#39;t worked out, of course, because Mom and Pop were still flipping out about the dangers of polio.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;You check the rest of the headlines. There&#39;s another suspected outbreak, this one in Auburn, which is not too far from here. That must have been what they were hinting at last night.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;//Wait a minute, maybe that&#39;s what this is,// you think. //It&#39;s some new kind of ... $girlboy[$gen] disease, and I happened to catch it somehow.//&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;The headlines on the front page don&#39;t mention anything about any such disease. It just goes on about HUAC, an acronym that seems familiar. The House Unamerican Affairs Committee, according to the article. Communists being investigated everywhere. Alger Hiss. That&#39;s right, you remember now. No sign of any mysterious disease affecting teenagers in the Puget Sound area.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;If anybody would know anything about such a disease, your family doctor might.&lt;/div&gt;
+--[[call doctor|1948 Skip First Day][$page to 5, $path.push(&quot;call doctor&quot;)]]
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 5&gt;&gt;&lt;div class=&quot;indent&quot;&gt;Dr Bennett&#39;s number is written on a smudged piece of piece of paper and tacked to a small corkboard beside the kitchen telephone. You haven&#39;t had to call this number since $sibnick fell down the porch steps and broke her arm a few summers ago.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Doctor Bennett&#39;s office,&quot; says a chirpy receptionist.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Hi, my name is $name &lt;&lt;textbox &quot;$lastname&quot; $lastname&gt;&gt;. My mom takes me to your office sometimes. May I speak with Dr Bennett?&quot; you ask.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;She asks you to spell your name, and you can hear her busily thumbing through some files. &quot;Kendall,&quot; she says triumphantly. &quot;Hold, please, while I see if the doctor is in.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Moments later, a man&#39;s voice comes on the line. &quot;This is Bob Bennett.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Unable to contain yourself, you launch into an explanation of your strange morning, rushing through all the feelings of oddness in your new body, your concern that you have no idea how it happened, having to skip school, not knowing how to change back, and hoping your parents don&#39;t find out about it. Dr Bennett listens carefully on the other end, occasionally making noises of confirmation and asking questions.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Finally, he clears his throat. &quot;Well, I suppose I could make time to see you this afternoon. I remember reading about something like this before, but it&#39;s been a few months, and it didn&#39;t seem all that reliable at the time. Would three o&#39;clock do?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Uh, yes, I suppose,&quot; you say. &quot;I&#39;m home from school all day. I was just hoping—&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Hoping that Irene — your mother — doesn&#39;t find out, eh?&quot; he asks knowingly. &quot;Don&#39;t worry. I&#39;ll do a quick exam in your room, if that&#39;s all right with you.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;That sounds about as good an arrangement as you could expect, so you agree and hang up.&lt;/div&gt;
+--[[go back to your bedroom|1948 Skip First Day][$page to 6]]
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 6&gt;&gt;&lt;div class=&quot;indent&quot;&gt;You rush back to your bedroom just in time. Mom&#39;s car pulls up in the driveway just as you&#39;re crawling back into bed.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;For the next few hours, you hear pots and pans clanking in the kitchen as you sit alone in your bedroom, your mind racing. You&#39;re still a $girlboy[$gen] and it&#39;s been //hours.// Nothing has changed.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;You try to sleep, but you can&#39;t quite drift off. Who knows what would happen if you let your eyes slip shut?&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;It must be hours later when Mom knocks on the door. &quot;Would you like some soup?&quot;&lt;/div&gt;
+--[[eat lunch|1948 Skip First Day][$page to 7]]
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 7&gt;&gt;&lt;div class=&quot;indent&quot;&gt;You&#39;re still ravenously hungry, so you eat three bowls of soup before it finally feels like you&#39;re getting filled up. Whatever happened to your body last night, it must have taken a lot of effort.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Mom comes to collect the bowl a little later, commenting happily on how your appetite seems to be coming back. Perhaps you overdid it a little on the soup.&lt;/div&gt;
+&lt;&lt;if $path.includes(&quot;call doctor&quot;)&gt;&gt;--[[wait for Dr Bennett|1948 Skip First Day][$page to 8]]&lt;&lt;else&gt;&gt;--[[try to take a nap|1948 Skip First Day][$page to 9]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 8&gt;&gt;&lt;div class=&quot;indent&quot;&gt;You while away the hours until your appointment by trying to nap, but it doesn&#39;t seem to work.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Eventually, you hear the sound of the telephone downstairs. After a few minutes of muffled speech, Mom climbs the stairs to your bedroom and informs you that Dr Bennett will be a little late. &quot;Did you ask the doctor to make a house call?&quot; she asks, worried.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;He offered,&quot; you say, without elaborating.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Ah. Well, that&#39;s all right. Shall I send him up when he arrives?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Dr Bennett is a man of middle years with graying hair, a heavy-set frame, and a rather lumpy face. He usually smells of antiseptic and sometimes of gin. Mom lets him into your room without a word, and he sets down a black leather bag on your desk.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Good to see you again, $name,&quot; he says in a kind, gruff voice, adjusting his head mirror. &quot;Shall we see what you&#39;re dealing with?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;He makes you undress halfway, and performs a brief and professional inspection of the key areas of your body. With a grunt, he rises to his feet, gesturing for you to &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;pull up your pajamas.&lt;&lt;else&gt;&gt;pull up your panties and fix your nightgown.&lt;&lt;endif&gt;&gt; &quot;Well, I see what you&#39;re talking about,&quot; he says after a moment, puzzled. &quot;I&#39;ll be dipped if I can figure out why it happened, though. I think I&#39;ll try to find out where I read about that other case. Must have been a medical journal. Don&#39;t think it was the newspaper.&quot; He conks himself genially on the head with one fist. &quot;Getting old, I guess.&quot;&lt;/div&gt;
+&lt;&lt;if $path.includes(&quot;polio newspaper&quot;)&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;I was reading about polio in the newspaper today,&quot; you say. &quot;Maybe this is some new-fangled disease or other, do you think?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Disease? Hard to say. I&#39;ve never seen a disease like ... wait a minute. Polio, polio.&quot; Dr Bennett frowns. &quot;There was a polio vaccine trial with some odd side effects. I think your mother was a part of it. Maybe — okay, $name, I know you&#39;re anxious to find out what&#39;s happened to you, but this is just a hypothesis, so don&#39;t mention it to anyone. Not yet. I&#39;m probably remembering it wrong. Let me find that old medical journal and look up this case. I&#39;ll call around, too. Maybe Dr Lambert or Dr Phillips remembers the details.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;I promise,&quot; you say, holding up one hand, like you do when you take your scouting oaths every weekend.&lt;/div&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;div class=&quot;indent&quot;&gt;&quot;What about school?&quot; you ask. &quot;I can&#39;t go like this, can I?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;That&#39;s a good point,&quot; he says, rubbing the white stubble on his chin. &quot;I tell you what. I can write the school a note that will excuse you from your gym classes. Would that do the trick?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Oh, yes please, sir.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Good,&quot; he says, getting out his notepad. &quot;You just take this with you and show it to your teachers. They can call me if they have any questions. I won&#39;t //tell// them anything,&quot; he adds, seeing the look on your face. &quot;Not unless you want me to.&quot;&lt;/div&gt;
+&lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;--[[ask if you can go to school as a girl|1948 Skip First Day][$page to 9, $cyc to 4]]&lt;&lt;else&gt;&gt;--[[ask if you can go to school as a boy|1948 Skip First Day][$page to 9, $cyc to 4]]&lt;&lt;endif&gt;&gt;
+--[[ask him not to tell the school|1948 Skip First Day][$page to 10, $cyc to 4]]
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 9&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;Couldn&#39;t I just go to school like this and pretend to be a $girlboy[$gen]?&quot; you ask. &quot;That way nobody would have to know.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;I don&#39;t know,&quot; he says, shaking his head and sucking his front teeth. &quot;You wouldn&#39;t be able to keep that kind of secret from your parents. Otherwise, what would you wear? Would you change clothes along the way somehow? And the school would have to know why the //real// you has stopped going, otherwise they&#39;d be sure to send a truant officer to talk to your parents and ask why you aren&#39;t at school. If that&#39;s what you prefer, I suppose I can&#39;t stop you, but I don&#39;t know how long you&#39;d get away with a scheme like that. It would fall apart in a day or two, I think. I don&#39;t advise that you try it.&quot; Without waiting for a response, he begins packing his black bag and prepares to leave. &quot;In fact, if you&#39;re going to try a scheme like that, I&#39;d prefer not to know about it.&quot;&lt;/div&gt;
+&lt;&lt;display &quot;CleanReturn&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 10&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;I won&#39;t tell the school anything, unless you ask me to,&quot; Dr Bennett assures you. &quot;It&#39;s part of the Hippocratic Oath. The World Medical Association in Geneva just issued a statement about secrecy, only this year. As a doctor, I don&#39;t say any more than is necessary.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Oh, good.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Of course, if I discover that what you have is some kind of communicable disease, and there are other people at risk,&quot; Dr Bennett says, beginning to pack his black bag, &quot;then I would have to tell the King County board of health. But I wouldn&#39;t worry about that right now. Let me look into this condition of yours first, and I&#39;ll let you know what I find out.&quot;&lt;/div&gt;
+&lt;&lt;display &quot;CleanReturn&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="41" name="1948 Best Friend Chat" tags="" position="2500,800" size="100,100">&lt;&lt;if $page == 0&gt;&gt;&lt;div class=&quot;indent&quot;&gt;You meet $fr at the front door and invite $acc[$fgen] in. $nomcap[$fgen] says hello to your mother politely, and then you head upstairs to the relative privacy of your bedroom.&lt;/div&gt;
+&lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;Nice room,&quot; $fr says, looking around. &quot;You&#39;ve been up here all day?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Yeah. It&#39;s a bit of a mess. Sorry.&quot; You sit down on the edge of the bed. &quot;Uh, thanks for bringing my homework over. That&#39;s real swell of you.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Any time,&quot; he says, and shrugs.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Look, I have to tell you something weird that happened,&quot; you say, lowering your voice. &quot;It&#39;s super strange, and you&#39;ll probably think I&#39;m crazy, so don&#39;t go Section Eight or anything, or my mom will hear.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Oh yeah?&quot; $fr asks, interested. &quot;What is it?&quot;&lt;/div&gt;
+--[[tell him|1948 Best Friend Chat][$page to 2]]
+&lt;&lt;else&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;I&#39;m sorry you missed school today,&quot; $fr says politely. &quot;I hope you&#39;re feeling better.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Yes and no. But I really appreciate you bringing me over my homework,&quot; you assure her.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Of course! Anything for you,&quot; she says, and smiles.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;You lower your voice. &quot;$fr, I have to tell you something secret, and you have to promise not to scream or faint, all right? And you can&#39;t tell //anybody.//&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Cross my heart,&quot; she says. &quot;Is it about a boy? Did you and $so break up? Did you kiss?&quot; Her eyes widen. &quot;You&#39;re pregnant?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Kind of the opposite, really,&quot; you say. &quot;Just promise not to wig out, okay?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Oh, I promise,&quot; $fr assures you. &quot;What is it?&quot;&lt;/div&gt;
+--[[tell her|1948 Best Friend Chat][$page to 2]]
+&lt;&lt;endif&gt;&gt;&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 1&gt;&gt;&lt;div class=&quot;indent&quot;&gt;You meet $so at the front door and invite $acc[$fgen] in. $nomcap[$fgen] says hello to your mother politely, and then you head upstairs to the relative privacy of your bedroom.&lt;/div&gt;
+&lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;Nice room,&quot; $fr says, looking around. &quot;So, what&#39;s this all about?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;You&#39;d better sit down.&quot; You gesture toward your desk chair, and sit down on the edge of the bed. &quot;And thanks for coming right over. &lt;&lt;if $path.includes(&quot;secret TG&quot;)&gt;&gt;I really just have to tell //someone.//&quot;&lt;&lt;else&gt;&gt;I really think you need to know what&#39;s going on.&quot;&lt;&lt;endif&gt;&gt;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Yeah,&quot; he says, concerned. &quot;You seemed so serious earlier. It&#39;s impossible, though, right? You really meant it?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Honest!&quot; You lower your voice. &quot;I know this is going to seem really queer, so don&#39;t go Section Eight or anything, or my mom will hear.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Yeah, no problem,&quot; $fr assures you. &quot;Let&#39;s see. Show me what happened.&quot;&lt;/div&gt;
+--[[show him|1948 Best Friend Chat][$page to 2]]
+&lt;&lt;else&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;So you have to tell me //everything,//&quot; $fr says in a hushed voice, as soon as the door is closed. &quot;You really turned into a boy?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&lt;&lt;if $path.includes(&quot;secret TG&quot;)&gt;&gt;&quot;Yes, but keep your voice down,&quot; you warn her.&lt;&lt;else&gt;&gt;&quot;I really did,&quot; you sigh.&lt;&lt;endif&gt;&gt; &quot;I&#39;ll tell you all about it. Have a seat.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;$fr sits at your desk chair and puts her hands in her lap attentively.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;$fr, you have to promise not to scream or faint, all right? And you can&#39;t tell //anybody.//&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Cross my heart,&quot; she says. &quot;I&#39;ve been //dying// all day to know more about this. I haven&#39;t told a soul, I swear. Tell me //everything.// Do you have a boy&#39;s thing?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;It&#39;s probably easier if I show you,&quot; you say. &quot;Don&#39;t wig out, okay?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;She nods fervently, her eyes bright.&lt;/div&gt;
+--[[show her|1948 Best Friend Chat][$page to 2]]
+&lt;&lt;endif&gt;&gt;&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 2&gt;&gt;&lt;div class=&quot;indent&quot;&gt;You show $fr everything.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;&quot;Holy crow,&quot; he says, leaning back.&lt;&lt;else&gt;&gt;&quot;My stars,&quot; she breathes, leaning in for a better look.&lt;&lt;endif&gt;&gt; &quot;You just woke up like this?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Yes, exactly,&quot; you say. &lt;&lt;if $path.includes(&quot;reveal TG&quot;)&gt;&gt;&quot;I told Mom and Pop as soon as I found out, in the bathroom. Mom called Dr Bennett and made me an appointment.&quot;&lt;&lt;elseif $path.includes(&quot;secret TG&quot;)&gt;&gt;&quot;I didn&#39;t tell Mom or Pop or anything. I just went to school and tried to keep it hidden. I don&#39;t know who else to tell.&quot;&lt;&lt;else&gt;&gt;&quot;I didn&#39;t tell Mom or Pop or anything. I just said I wasn&#39;t feeling well and asked if I could stay home. I didn&#39;t know who else to tell.&quot;&lt;&lt;endif&gt;&gt;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Jiminy Christmas, this is weird,&quot; $fr says, still staring. &quot;What are you going to do?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;What do you mean?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;&quot;Are you nuts?&quot;&lt;&lt;else&gt;&gt;&quot;Are you dizzy?&quot;&lt;&lt;endif&gt;&gt; $fr asks. &quot;You&#39;ve got gym class. We&#39;re doing swimming. It&#39;s supposed to be useful in case &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;we ever go into the Navy, I suppose.&lt;&lt;else&gt;&gt;there&#39;s ever a flood or something, I suppose.&lt;&lt;endif&gt;&gt; How are you going to jump in the pool looking like //that?//&quot;&lt;/div&gt;
+&lt;&lt;if $path.includes(&quot;reveal TG&quot;)&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;We&#39;re going to talk to Mr Fordyce tonight and tell him what happened.&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;The principal? And then what?&quot; $fr asks. &quot;You&#39;re going to let this secret get out all over the whole school?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;I don&#39;t know,&quot; you admit. &quot;It depends on what he says.&quot; You &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;pull up your trousers and stuff your sock back into place.&lt;&lt;else&gt;&gt;pull up your layers of underwear and pull your girdle and skirt back into place.&lt;&lt;endif&gt;&gt; &quot;Maybe I&#39;ll go to school like this. Maybe not. We&#39;ll just have to see, won&#39;t we?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;&quot;Better you than me, buddy,&quot; $fr says with a shudder.&lt;&lt;else&gt;&gt;&quot;Wouldn&#39;t that be fine? I&#39;m almost jealous,&quot; $fr says wistfully.&lt;&lt;endif&gt;&gt;&lt;/div&gt;
+&lt;&lt;display &quot;CleanReturn&quot;&gt;&gt;
+&lt;&lt;elseif $path.includes(&quot;shameful TG&quot;)&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;&quot;Holy smokes,&quot;&lt;&lt;else&gt;&gt;&quot;My goodness,&quot;&lt;&lt;endif&gt;&gt; you say. &quot;Swimming? I&#39;ve got to come up with a plan before tomorrow. What am I going to do?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;We&#39;ll have to write a note and sign it like your dad does,&quot; $fr suggested. &quot;You get dressed and put that thing away, and I&#39;ll start on the note. I&#39;m good at signatures. Do we have anything with your dad&#39;s—&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;There is a knock on the door as you are getting your clothing back in place. $sibnick&#39;s voice comes through the wood. &quot;$name?&quot; she asks. &quot;Can I come in?&quot;&lt;/div&gt;
+--[[tell Dot to go away|1948 Best Friend Chat][$page to 3]]
+&lt;&lt;elseif $path.includes(&quot;secret TG&quot;)&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;I&#39;ve been wracking my brain about that one,&quot; you say. &quot;I&#39;ve got to come up with a plan before gym class tomorrow. What am I going to do?&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;We&#39;ll have to write a note and sign it like your dad does,&quot; $fr suggested. &quot;You get dressed and put that thing away, and I&#39;ll start on the note. I&#39;m good at signatures. Do we have anything with your dad&#39;s—&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;There is a knock on the door as you are getting your clothing back in place. $sibnick&#39;s voice comes through the wood. &quot;$name?&quot; she asks. &quot;Can I come in?&quot;&lt;/div&gt;
+--[[tell Dot to go away|1948 Best Friend Chat][$page to 3]]
+&lt;&lt;endif&gt;&gt;&lt;&lt;endif&gt;&gt;\
+&lt;&lt;if $page == 3&gt;&gt;&lt;div class=&quot;indent&quot;&gt;&quot;No!&quot; you shout. &quot;Go away!&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;Before you are able to get completely dressed again, $sibnick bursts in with one of her grade school textbooks. &quot;Can you tell me—&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;There is a frozen moment as $sibnick spots your &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;little thatch of pubic hair with its missing cock.&lt;&lt;else&gt;&gt;new cock nestled in among your pubic hair.&lt;&lt;endif&gt;&gt; Her eyes go huge as they dart from it to your face and back again.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;$sibnick, wait,&quot; you say.&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;But it&#39;s too late. $sib is already galloping headlong for the stairs, shouting, &quot;Mo-oommm! $name &lt;&lt;if $startsex == &quot;male&quot;&gt;&gt;lost his boy thing!&lt;&lt;else&gt;&gt;has a boy thing!&lt;&lt;endif&gt;&gt; Come quick and see!&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;You groan as you finish dressing. &quot;Little tattletale!&quot;&lt;/div&gt;
+&lt;div class=&quot;indent&quot;&gt;&quot;Looks like I&#39;d better go,&quot; $fr says, getting to $poss[$fgen] feet. &quot;If you still need my help with the note thing, call me.&quot;&lt;/div&gt;
+--&lt;&lt;link &quot;go after your sister&quot; &quot;1948 Family Talk&quot;&gt;&gt;&lt;&lt;set $page to 8&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="42" name="DESIGN NOTES" tags="" position="50,350" size="100,100">THE ZETA CHROMOSOME
+From 1930 to 1938, a researcher named Horace Kind attempted to produce a polio vaccine, using as test subjects a number of high school students in the area of King County, Washington. These experiments were ultimately unsuccessful in preventing polio, but they had an unexpected side effect. The children of those vaccine test subjects were born with a new kind of dimorphic sex chromosome, designated Z or Zeta.
+
+The Zeta chromosome can transform its shape and chemical nature from X to Y and back, changing an XX into an XY pair, or vice-versa. It rarely does so when this would result in a non-viable combination, such as YY, although this is mostly because I (the author) don&#39;t want to complicate things unnecessarily. Some other author who is better versed in genetics can tackle this variation.
+
+What the Zeta chromosome actually _does_ apart from change biological sex is up to the player. The intention is to permit the player to play through each of the scenarios and keep track of the player&#39;s decisions. The changes wrought by the Zeta chromosome and the way these affect society depend on what the player chooses.
+
+THE CHOICES
+There are five basic axes along which the player&#39;s choices matter. Major decisions from each story are added to the saved calculations, which persist across multiple playthroughs. (The player will have the option to wipe the history and start fresh.)
+
+* Sex. Does the Zeta chromosome only affect AFAB or AMAB? If the player always selects &quot;male&quot; to start, then Zeta becomes a condition only of children born and identified as male at birth. The choice of starting character could become constrained to that single sex. If the player chooses a mixture of male and female starting points, the game will allow both AMAB and AFAB characters to be Zetas.
+
+* Social. Does society accept or reject these changes? If the player is more open, more forthright, more bold, and more accepting of the changes, society will shift in that direction. Zetas will get more good publicity as role models emerge on early radio and newsreels, and later in the golden age of television. If the player is more secretive or shameful about these changes, and pushes less against the grain, then society will have a less-good view of Zetas; and Zetas of the future are more likely to conceal their natures or face consequences. The world thus becomes the kind of place that the player creates.
+
+* Orientation. Does the Zeta chromosome change your orientation or sex drive? If the player chooses to engage in new sexual behaviors (for instance, going from hetero male to hetero female), then at least sometimes the Zeta chromosome makes this happen. If the player chooses to remain with one sexuality (eg, hetero male to lesbian female) then the Zeta chromosome is _not_ known for changing orientation. The game will keep track of how often this happens and make assumptions about later characters&#39; sexuality.
+
+* Mental. Does the Zeta chromosome change the way people think? Is the brain itself altered, setting aside matters of orientation? Do Zetas think differently in each state?
+
+* Procreation. Since a Zeta always changes during sex, it makes normal methods of proliferation for the Z chromosome impossible. Therefore, one of two methods must be favored. Either the chromosome is _transmissible_ (you can catch Zeta from somewhere), or the chromosome is _lockable_ (your form can be fixed in one state somehow, either temporarily or permanently).
+
+All of the above contribute to the kind of world the player creates. If Zetas are looked down upon, and the state is Lockable, then Zetas may try to fix themselves in a favored shape. If Zetas are disfavored and the condition can be caught, then the condition might be inflicted on others out of spite, and transgender people may secretly aspire to catch the condition. And so on.
+
+THE ZETA WAVES
+</tw-passagedata></tw-storydata>
